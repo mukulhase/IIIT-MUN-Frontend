@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>IIIT MUN '17</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"/>
+
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'>
+    <link rel="stylesheet" href="../node_modules/angular-material/angular-material.css"/>
+    <link rel="stylesheet" href="assets/app.css"/>
+
+    <style type="text/css">
+        /**
+         * Hide when Angular is not yet loaded and initialized
+         */
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+            display: none !important;
+        }
+    </style>
+
+</head>
+
+<body ng-app="MUN" layout="column" ng-cloak>
+<md-toolbar class="md-warn" layout="row" layout-align="center" style="min-height: 10px;">
+    Starts in: --:--:--
+</md-toolbar>
+<md-toolbar layout="row" layout-align="center center">
+    <h1>
+        <md-icon md-svg-icon="share" style="color: #0F0;"></md-icon>
+        IIIT MUN '17
+    </h1>
+    <md-toolbar-tools layout>
+
+        <md-button class="" ng-repeat="link in links" href="#/{{link.l}}" name="{{link.l}}">{{link.t}}</md-button>
+
+        <md-menu ng-repeat="menu in menus">
+            <md-button md-menu-origin ng-click="$mdOpenMenu()">{{menu.t}}</md-button>
+            <md-menu-content width="1">
+                <md-menu-item ng-repeat="link in menu.l">
+                    <md-button href="#/{{link.l}}">{{link.t}}</md-button>
+                </md-menu-item>
+            </md-menu-content>
+        </md-menu>
+        <md-button class="md-raised md-accent">Register Now</md-button>
+
+    </md-toolbar-tools>
+</md-toolbar>
+<md-nav-bar md-selected-nav-item="index">
+    <md-nav-item class="" ng-repeat="link in links" md-nav-href="#/{{link.l}}" name="{{link.l}}">{{link.t}}</md-nav-item>
+</md-nav-bar>
+
+
+<md-content flex>
+    <ui-view name="content"></ui-view>
+</md-content>
+
+</body>
+
+<script src="../node_modules/angular/angular.js"></script>
+<script src="../node_modules/angular-animate/angular-animate.js"></script>
+<script src="../node_modules/angular-aria/angular-aria.js"></script>
+<script src="../node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script type="text/javascript" src="../node_modules/angular-material/angular-material.js"></script>
+<script src="src/app.js"></script>
+<script src="src/controllers.js"></script>
+<script src="src/routes.js"></script>
+</html>
