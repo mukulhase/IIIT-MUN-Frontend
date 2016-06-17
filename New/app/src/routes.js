@@ -26,6 +26,6 @@ angular.module('MUN.routes',[])
             }
         }
 
-        $urlRouterProvider.otherwise('/home')
+        $urlRouterProvider.otherwise('/index')
 
     });
