@@ -2,6 +2,7 @@ var links = [
     {t:"Home",l:"index"},
     {t:"Schedule",l:"schedule"},
     {t:"Executive Board",l:"eb"},
+    {t:"Committees",l:"committees"},
     {t:"Allotment",l:"resources"},
     {t:"Contact",l:"contact"}
 ];
