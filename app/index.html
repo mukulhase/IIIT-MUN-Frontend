@@ -24,34 +24,39 @@
 </head>
 
 <body ng-app="MUN" layout="column" ng-cloak>
-<div class="md-whiteframe-z5 md-warn" layout="row" layout-align="center">
-    <div class="md-headline">Starts in: --:--:--</div>
+<div layout="column" flex>
+
+        <md-toolbar class="" md-whiteframe="10" layout="column" >
+            <div layout="row" style="background-color: rgb(255,87,34)" md-whiteframe="1"  layout-align="center center">
+                <div class="">Starts in: --:--:--</div>
+            </div>
+            <div layout="row" layout-align="center center">
+                <h1>
+                    <md-icon md-svg-icon="share" style="color: #0F0;"></md-icon>
+                    IIIT MUN '17
+                </h1>
+                <md-toolbar-tools layout>
+
+                    <md-button class="" ng-repeat="link in links" href="#/{{link.l}}" name="{{link.l}}">{{link.t}}</md-button>
+
+                    <md-menu ng-repeat="menu in menus">
+                        <md-button md-menu-origin ng-click="$mdOpenMenu()">{{menu.t}}</md-button>
+                        <md-menu-content width="1">
+                            <md-menu-item ng-repeat="link in menu.l">
+                                <md-button href="#/{{link.l}}">{{link.t}}</md-button>
+                            </md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
+                    <md-button class="md-raised md-accent">Register Now</md-button>
+                </md-toolbar-tools>
+            </div>
+
+        </md-toolbar>
+    <md-content flex>
+        <ui-view name="content"></ui-view>
+    </md-content>
+
 </div>
-<md-toolbar layout="row" layout-align="center center">
-    <h1>
-        <md-icon md-svg-icon="share" style="color: #0F0;"></md-icon>
-        IIIT MUN '17
-    </h1>
-    <md-toolbar-tools layout>
-
-        <md-button class="" ng-repeat="link in links" href="#/{{link.l}}" name="{{link.l}}">{{link.t}}</md-button>
-
-        <md-menu ng-repeat="menu in menus">
-            <md-button md-menu-origin ng-click="$mdOpenMenu()">{{menu.t}}</md-button>
-            <md-menu-content width="1">
-                <md-menu-item ng-repeat="link in menu.l">
-                    <md-button href="#/{{link.l}}">{{link.t}}</md-button>
-                </md-menu-item>
-            </md-menu-content>
-        </md-menu>
-        <md-button class="md-raised md-accent">Register Now</md-button>
-    </md-toolbar-tools>
-</md-toolbar>
-
-
-<md-content flex layout-padding>
-    <ui-view name="content"></ui-view>
-</md-content>
 
 </body>
 
