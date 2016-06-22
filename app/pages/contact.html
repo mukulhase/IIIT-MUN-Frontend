@@ -34,16 +34,19 @@
 
     <form action="https://felicity.iiit.ac.in/iiithmun/send_email.php" method="post">
     <md-content md-theme="docs-dark" layout-align="center center">
-        <span class="md-headline">Queries</span>
-        <div layout-gt-sm="row" flex="600" class="md-block">
+        <br>
+        <span class="md-headline" style="display: table;margin: 0 auto;">Queries</span>
+        <div flex="600" class="md-block">
             <md-input-container>
                 <label>Title</label>
                 <input>
             </md-input-container>
+            <br>
             <md-input-container>
                 <label>Email</label>
                 <input type="email">
             </md-input-container>
+            <br>
             <md-input-container>
                 <label>Subject</label>
                 <input type="text">
@@ -53,9 +56,11 @@
             <label>Description</label>
             <textarea rows="2"></textarea>
         </md-input-container>
+        <div style="text-align: center;">
         <input class="md-button" name="submit" type="submit" id="submit" value="Submit Form" />
         &nbsp;
         <input class="md-button" name="reset" type="reset" id="reset" tabindex="5" value="Reset Form" />
+        </div>
     </md-content>
 </form>
 </div>
