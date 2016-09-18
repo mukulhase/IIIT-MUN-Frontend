@@ -24,18 +24,34 @@
 </head>
 
 <body ng-app="MUN" layout="column" ng-cloak>
-<div layout="column" flex>
-
+<div layout="row" flex>
+    <md-sidenav
+        class="md-sidenav-left"
+        md-component-id="left"
+        md-is-locked-open="$mdMedia('gt-sm')"
+        md-whiteframe="4"
+        >
+        <header class="nav-header" ss-style-color="{'background-color': 'primary.300'}">
+            <img width=100% src="https://iiit.ac.in/img/iiit-new.png">
+        </header>
+        <md-content flex role="navigation" ss-style-color="{'background-color': 'primary.default'}">
+            <ss-sidenav flex menu="menu"></ss-sidenav>
+        </md-content>
+    </md-sidenav>
+    <div layout="column" flex>
         <md-toolbar class="" md-whiteframe="10" layout="column" >
-            <div layout="row" style="background-color: rgb(255,87,34)" md-whiteframe="1"  layout-align="center center">
+            <div layout="row" style="background-color: rgb(255,87,34); min-height: 25px" md-whiteframe="1"  layout-align="center center">
                 <div class="">Starts in: --:--:--</div>
             </div>
             <div layout="row" layout-align="center center">
                 <h1>
+                <md-button class="md-icon-button" ng-click="openMenu()" hide-gt-sm aria-label="Toggle Menu">
+                    <md-icon md-svg-src="assets/svg/ic_menu_24px.svg"></md-icon>
+                </md-button>
                     <md-icon md-svg-icon="share" style="color: #0F0;"></md-icon>
                     IIIT MUN '17
                 </h1>
-                <md-toolbar-tools layout>
+                <md-toolbar-tools layout hide show-gt-lg>
 
                     <md-button class="" ng-repeat="link in links" href="#/{{link.l}}" name="{{link.l}}">{{link.t}}</md-button>
 
@@ -50,21 +66,16 @@
                     <md-button class="md-raised md-accent">Register Now</md-button>
                 </md-toolbar-tools>
             </div>
-
         </md-toolbar>
-    <md-content flex>
-        <ui-view name="content"></ui-view>
-    </md-content>
-
+        <md-content flex>
+            <ui-view name="content"></ui-view>
+        </md-content>
+    </div>
 </div>
 
 </body>
+<script type="text/javascript" src="src/all.js"></script>
 
-<script src="../node_modules/angular/angular.js"></script>
-<script src="../node_modules/angular-animate/angular-animate.js"></script>
-<script src="../node_modules/angular-aria/angular-aria.js"></script>
-<script src="../node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
-<script type="text/javascript" src="../node_modules/angular-material/angular-material.js"></script>
 <script src="src/app.js"></script>
 <script src="src/controllers.js"></script>
 <script src="src/routes.js"></script>
