@@ -19,6 +19,7 @@ angular
         $mdIconProvider
             .defaultIconSet("./assets/svg/avatars.svg", 128)
             .icon("menu"       , "./assets/svg/menu.svg"        , 24)
+            .icon("logo"       , "./assets/svg/logo.svg"        , 42)
             .icon("share"      , "./assets/svg/share.svg"       , 24)
             .icon("google_plus", "./assets/svg/google_plus.svg" , 512)
             .icon("hangouts"   , "./assets/svg/hangouts.svg"    , 512)
