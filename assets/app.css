@@ -274,20 +274,9 @@ span.name {
   }
   #section0{
     background-image: url(../images/mmm1.jpg);
-    padding: 20% 0 0 0;
+    padding: 10% 0 0 0;
   }
-  #section1{
-    background-image: url(../images/mmm.jpg);
-    padding: 5% 0 0 0;
-  }
-  #section2{
-    background-image: url(../images/mmm2.jpg);
-    padding: 6% 0 0 0;
-  }
-  #section3{
-    background-image: url(../images/mmm3.jpg);
-    padding: 6% 0 0 0;
-  }
+  
   .section{
     text-align: center;
     color: white;
@@ -297,7 +286,7 @@ span.name {
   }
   .box{
     text-align: center;
-    color: #808080;
     font-size: 120%;
     line-height: 1.6em;
+    color: black;
   }
