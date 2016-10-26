@@ -1,18 +1,21 @@
 angular.module('MUN.controllers', [])
 
-    .controller('HomeCtrl', function ($scope) {
-    	$(document).ready(function() {
-            $('#fullpage').fullpage({
-                sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-                verticalCentered: true,
-  				resize : true,
-  				css3: true,
-  				scrollOverflow:true
+	.controller('HomeCtrl', function ($scope) {
+		$('#fullpage').show()
 
-            });
-        });
+        
+// 8am 27jan 2017
+// contact us:
+// aditya bharti
+// aayush
+// saumya srivastava
+// Sid
+// Sriram Indurthi
+
     })
-
+	.controller('GenericCtrl', function ($scope) {
+		$('#fullpage').hide()
+    })
     .controller('AboutCtrl', function ($scope) {
 
     });

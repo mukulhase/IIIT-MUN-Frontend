@@ -249,3 +249,55 @@ span.name {
 .md-toggle-icon md-icon{
     height: 40px;
 }
+#section0 h1 {
+  -webkit-stroke-width: 5.3px;
+   -webkit-stroke-color: #FFFFFF;
+   -webkit-fill-color: #FFFFFF;
+   text-shadow: 1px 0px 20px  cyan;
+   -webkit-transition: width 0.3s; /*Safari & Chrome*/
+   transition: width 0.3s;
+   -moz-transition: width 0.3s; /* Firefox 4 */
+   -o-transition: width 0.3s; /* Opera */
+    font-weight: normal;
+    font-size: 250%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+
+  #section0,
+  #section1,
+  #section2,
+  #section3{
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  #section0{
+    background-image: url(../images/mmm1.jpg);
+    padding: 20% 0 0 0;
+  }
+  #section1{
+    background-image: url(../images/mmm.jpg);
+    padding: 5% 0 0 0;
+  }
+  #section2{
+    background-image: url(../images/mmm2.jpg);
+    padding: 6% 0 0 0;
+  }
+  #section3{
+    background-image: url(../images/mmm3.jpg);
+    padding: 6% 0 0 0;
+  }
+  .section{
+    text-align: center;
+    color: white;
+  }
+  #section3 h1{
+    color: #000;
+  }
+  .box{
+    text-align: center;
+    color: #808080;
+    font-size: 120%;
+    line-height: 1.6em;
+  }

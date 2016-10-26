@@ -11,7 +11,7 @@
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'>
     <link rel="stylesheet" href="assets/app.css"/>
     <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
-
+<link rel="stylesheet" href="http://flipclockjs.com/_themes/flipclockjs/css/flipclock.css">
 
 
 
@@ -31,30 +31,29 @@
     <md-sidenav
         class="md-sidenav-left"
         md-component-id="left"
-        md-is-locked-open="$mdMedia('gt-sm')"
         md-whiteframe="4"
         >
         <header class="nav-header" ss-style-color="{'background-color': 'primary.300'}">
             <img width=100% src="https://iiit.ac.in/img/iiit-new.png">
         </header>
-        <md-content flex role="navigation" ss-style-color="{'background-color': 'primary.default'}">
+        <!-- <md-content flex role="navigation" ss-style-color="{'background-color': 'primary.default'}"> -->
+        <md-content flex role="navigation" ss-style-color="{'background-color': 'primary.300'}">
             <ss-sidenav flex menu="menu"></ss-sidenav>
         </md-content>
     </md-sidenav>
     <div layout="column" flex>
         <md-toolbar class="" md-whiteframe="10" layout="column" >
-            <div layout="row" style="background-color: rgb(255,87,34); min-height: 25px" md-whiteframe="1"  layout-align="center center">
-                <div class="">Starts in: --:--:--</div>
-            </div>
-            <div layout="row" layout-align="center center">
-                <h1>
-                <md-button class="md-icon-button" ng-click="openMenu()" hide-gt-sm aria-label="Toggle Menu">
-                    <md-icon md-svg-src="assets/svg/ic_menu_24px.svg"></md-icon>
-                </md-button>
+            <div layout="row" layout-align="center center" md-colors="{background: 'accent-900'}">
+                <div>
+                    <md-button class="md-icon-button" ng-click="openMenu()" hide-gt-sm aria-label="Toggle Menu">
+                        <md-icon md-svg-src="assets/svg/ic_menu_24px.svg"></md-icon>
+                    </md-button>
+                </div>
+                <h2 class="md-heading" style="white-space:nowrap;">
                     <md-icon md-svg-icon="logo" style="width:35px !important"></md-icon>
-                    IIIT MUN '17
-                </h1>
-                <md-toolbar-tools layout hide show-gt-lg>
+                    IIIT-H MUN '17
+                </h2>
+                <md-toolbar-tools layout hide show-gt-sm>
 
                     <md-button class="" ng-repeat="link in links" href="#/{{link.l}}" name="{{link.l}}">{{link.t}}</md-button>
 
@@ -66,13 +65,49 @@
                             </md-menu-item>
                         </md-menu-content>
                     </md-menu>
-                    <md-button class="md-raised md-accent">Register Now</md-button>
+                    <md-button ng-click="openForm()" class="md-raised md-accent">Register Now</md-button>
                 </md-toolbar-tools>
             </div>
         </md-toolbar>
         <md-content layout flex>
-            <ui-view layout="column" flex name="content"></ui-view>
+            <ui-view layout="column" name="content"></ui-view>
         </md-content>
+        <div id="fullpage" style="position: absolute;">
+            <div class="section " id="section0" flex>
+                <h1>IIIT-H MUN 2017</h1>
+                <svg enable-background="new 0 0 50 50" height="50px" id="Layer_1" version="1.1" viewBox="0 0 50 50" width="50px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><rect fill="none" height="50" width="50"/><polygon points="47.25,15 45.164,12.914 25,33.078 4.836,12.914 2.75,15 25,37.25 "/></svg>
+            </div>
+            <div class="section" id="section1">
+            <div class="box">
+            <h1><u> From the Secretary General </u></h1>
+            <p>
+                Greetings,
+
+It is my utmost pleasure to welcome you to the 3rd edition of IIITH-MUN, from 27 January to 29 January, 2017 at IIIT Hyderabad. IIITH-MUN aims to offer a platform where you can meet a number of talented delegates, and debate on a diverse range of problems relevant on the global scale.
+<p>
+IIITH-MUN intends to promote healthy debate, deliberation and cooperation. As you battle it out (intellectually, of course) with the rest of the delegates, IIITH-MUN will expose you to a host of world problems - not just those we face currently, but potential ones that can arise in the future too. It will challenge you to design solutions in a diplomatic manner, through continued discussion and cooperation with delegates representing other countries. 
+</p>
+<p>
+This year, we will be hosting the MUN in partnership with CID (Conclave of International Diplomats), an organization which is an independent body of young enthusiasts hailing from various professional and non- professional backgrounds who aim to involve Indian youth to participate and bring out their talents. We, and hope  that you take away more than just the memories of the MUN after it's done - valuable experience in diplomacy, better debating skills and a more open mind towards finding cooperative and synergistic solutions to diplomatic issues.
+</p>
+<p>
+We hope to have an enjoyable and exciting IIITH-MUN, and look forward to welcoming all of you in January 2017.
+</p>
+<p>
+With best regards,
+Siddhant Shrivastava,
+Secretary General,
+IIITH-MUN, 2017
+</p>
+</div>
+            </div>
+            <div class="section" id="section2">
+                <h2>Amazing stuff</h2>
+            </div>
+            <div class="section" id="section3">
+                <h1>Test</h1>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -81,11 +116,37 @@
 <script src="src/app.js"></script>
 <script src="src/controllers.js"></script>
 <script src="src/routes.js"></script>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
-<script type="text/javascript" src="scrolloverflow.min.js"></script>
+    <script type="text/javascript" src="jquery.fullPage.js"></script>
+    <script src="http://flipclockjs.com/_themes/flipclockjs/js/flipclock/flipclock.js"></script>
 
-<script type="text/javascript" src="jquery.fullPage.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+            $('#fullpage').fullpage({
+                sectionsColor: ['#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+                resize : true,
+                css3: true,
+                easing: 'easeInOutCubic',
+                easingcss3: 'ease',
+                touchSensitivity: 15,
+                normalScrollElementTouchThreshold: 5,          //Accessibility
+                keyboardScrolling: true,
+                verticalCentered: false,
+                animateAnchor: true,
+                recordHistory: true
+            });
+        });
+
+    var date = new Date(2017, 1, 26);
+    var now = new Date();
+    var diff = (date.getTime()/1000) - (now.getTime()/1000);
+
+    var clock = $('.clock').FlipClock(diff,{
+        clockFace: 'DailyCounter',
+        countdown: true
+    });  
+</script>
+
 </html>

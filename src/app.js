@@ -1,9 +1,9 @@
 var links = [
     {t:"Home",l:"index"},
     {t:"Schedule",l:"schedule"},
-    {t:"Executive Board",l:"eb"},
+   // {t:"Executive Board",l:"eb"},
     {t:"Committees",l:"committees"},
-    {t:"Allotment",l:"resources"},
+   // {t:"Allotment",l:"resources"},
     {t:"Contact",l:"contact"}
 ];
 var menus = [{t:"About",l:[
@@ -24,11 +24,12 @@ angular
             .icon("google_plus", "./assets/svg/google_plus.svg" , 512)
             .icon("hangouts"   , "./assets/svg/hangouts.svg"    , 512)
             .icon("twitter"    , "./assets/svg/twitter.svg"     , 512)
-            .icon("phone"      , "./assets/svg/phone.svg"       , 512);
+            .icon("phone"      , "./assets/svg/phone.svg"       , 512)
+            .icon('md-toggle-arrow', $$mdSvgRegistry.mdToggleArrow);
 
         $mdThemingProvider.theme('default')
-            .primaryPalette('brown')
-            .accentPalette('red');
+            .primaryPalette('grey')
+            .accentPalette('blue');
 
         var sections=[];
         for(var i in links){
@@ -59,12 +60,25 @@ angular
         ssSideNavSectionsProvider.initWithTheme($mdThemingProvider);
         ssSideNavSectionsProvider.initWithSections(sections);
 
-    }).run(function($rootScope, $mdSidenav, ssSideNav){
+    }).run(function($rootScope, $mdSidenav, ssSideNav, $mdDialog){
         $rootScope.links = links;
         $rootScope.menus = menus;
         $rootScope.menu = ssSideNav;
         $rootScope.openMenu = function(){
             $mdSidenav('left').toggle();
+        };
+        $rootScope.openForm = function(ev){
+            $mdDialog.show({
+              // controller: DialogController,
+              template: '<h1> Hello world </h1>',
+              parent: angular.element(document.body),
+              targetEvent: ev,
+              clickOutsideToClose:true,
+              fullscreen: false // Only for -xs, -sm breakpoints.
+            })
+            .then(function(answer) {
+            }, function() {
+            });
         };
 
 
