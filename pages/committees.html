@@ -1,104 +1,18 @@
+<md-content layout-padding>
+	<div flex=80 layout='column' layout-align="center" style="display: block;">
+		<h1 class="title md-headline">Committees</h1>
 
-<h1 class="title">Committees</h1>
+		<div ng-repeat="council in councils" class="committee">
+			<md-toolbar>
+			<md-toolbar-tools>
+			</md-toolbar-tools>
+			<h3>{{council.title}}</h3>
+			</md-toolbar>
+			<div class="md-whiteframe-z1">
+			{{council.content}}
+				
+			</div>
+		</div>
 
-<div class="committee_box">
-<table class="ctable" style="width:100%;border:0px;color:black"">
-	<tbody>
-		<tr>
-			<td style="width: 30%;float:center;border:0px;margin-left:40px;padding-left:50px;padding-top:8px;"><img src="images/UNSCn.jpg" style="float:center;width:80% ;" /></td>
-			
-			 <td class="committee_text"><b><span style="font-size:30px;color:#05104A;font-family:Helvetica,Times New Roman, Times, serif">United Nations Security Council (UNSC)</span><br/><br />
-<table style="font-size:20px;padding-left:20px" >
-<tr>
-	<td style="color:#05104A;font-size:22px;font-family:Helvetica,Times New Roman, Times, serif">The Security Council is one of the oldest and most important council in the UN. It has the primary responsibility for the maintenance of international peace and security. It has 15 Members, and each Member has one vote. Under the Charter, all Member States are obligated to comply with Council decisions.
-A small committee, discussions are often on matters critical to the maintenance of peace and accord among countries.</td>
-</tr>
-<!--<tr><td style="color:#05104A;font-size:22px;font-family:Helvetica,Times New Roman, Times, serif">Agenda</td><td style="color:#1E2E7F;padding-left:40px">Crimean Crisis</td></tr><br/><tr><td>&nbsp;</td><td>&nbsp;</td><tr><td style="color:#05104A;font-size:22px;font-family:Helvetica,Times New Roman, Times, serif">Chair</td><td style="color:#1E2E7F;padding-left:40px">Jaideep Sood</td></tr><tr><td></td><td></td></tr></table></b><br /></td>
-    
-</tr>-->
-			
-	</tbody>
-</table>
+	</div>
 </div>
-&nbsp;
-
-
-<div class="committee_box">
-<table class="ctable"  style="width:100%;border:0px;">
-	<tbody>
-		<tr>
-			
-			
-			<td class="committee_text"><b><span style="font-size:30px;color:#05104A;font-family:Helvetica,Times New Roman, Times, serif">UNGA: DISEC<br/></span><br/><br />
-<table style="font-size:20px">
-<tr>
-	<td style="color:#05104A;font-size:22px;font-family:Helvetica,Times New Roman, Times, serif">The General Assembly is a principal organ of the United Nations , which is strongly grounded on the principle of equal representation amongst all 193 member countries. It has 6 subsidiary committees , /out of which , DISEC or the Disarmament and International Security Council is termed the ‘First Committee’. 
-	DISEC deals with disarmament, global challenges and threats to peace that affect the international community and seeks out solutions to the challenges in the international security regime.
-	Being a large committee, the atmosphere is always tense with excitement and debates are as lively and active as it gets.</td>
-</tr>
-<!--<tr><td style="color:#05104A;font-size:22px;font-family:Helvetica,Times New Roman, Times, serif">Agenda</td>
-<td style="color:#1E2E7F;padding-left:40px"> Conclusion of effective international arrangements to assure non - nuclear states against the use or threat of use of nuclear weapons<br/></td></tr><br/><tr><td>&nbsp;</td><td>&nbsp;</td><tr>
-<td style="color:#05104A;font-size:22px;font-family:Arial rounded MT bold;font-family:Helvetica,Times New Roman, Times, serif">Chair</td>
-<td style="color:#1E2E7F;padding-left:40px">Vaibhav Das</td></tr>
-<tr><td style="color:#05104A;font-size:22px;font-family:Helvetica,Times New Roman, Times, serif">Vice-chair</td>
-<td style="color:#1E2E7F;padding-left:40px">Dinesh Reddy</td></tr></table></b><br /></td>-->
- 
-<td style="width: 30%;float:center;border:0px;margin-left:40px;padding-left:35px;padding-top:12px;padding-bottom:18px;"><img src="images/UNSCn.jpg" style="float:center;width:80% ;" /></td>   
-			
-		</tr>
-	</tbody>
-</table>
-</div>
-<br/>
-
-
-
-<div class="committee_box">
-<table class="ctable"  style="width:100%;border:0px;">
-    <tbody>
-		<tr>
-			<td style="width: 30%;float:center;border:0px;margin-left:40px;padding-left:35px;padding-top:12px;padding-bottom:-20px;margin-bottom:-20px"><img src="images/UNSCn.jpg" style="float:center;width:80% ;" /></td>
-			
-			<td class="committee_text"><b><span style="font-size:30px;color:#05104A;font-family:Helvetica,Times New Roman, Times, serif">ECOSOC</span><br/><br />
-<table style="font-size:20px">
-
-<tr>
-	<td style="color:#05104A;font-size:22px;font-family:Helvetica,Times New Roman, Times, serif">ECOSOC, or The Economic and Social Council is at the heart of the United Nations system to advance the three dimensions of sustainable development – economic, social and environmental. Consisting of 54 members, it is the central platform for fostering debate and innovative thinking, forging consensus on ways forward, and coordinating efforts to achieve internationally agreed goals. </td>
-</tr>
-
-<!--</table><tr><td style="color:#05104A;font-size:22px;font-family:Helvetica,Times New Roman, Times, serif">Agenda</td><td style="color:#1E2E7F;padding-left:40px">Regulation of International Drug Trade</td></tr><br/><tr><td>&nbsp;</td><td>&nbsp;</td><tr><td style="color:#05104A;font-size:22px;font-family:Helvetica,Times New Roman, Times, serif">Co-Chair</td><td style="color:#1E2E7F;padding-left:40px">Sourya Banerjee</td></tr><tr><td style="color:#05104A;font-size:22px;font-family:Helvetica,Times New Roman, Times, serif">Co-Chair</td><td style="color:#1E2E7F;padding-left:40px">Ashwin Ragavendar</td></tr></table></b><br/></td>
-    
-			
-		</tr>-->
-	</tbody>
-</table>
-</div>
-<br/>
-
-<div class="committee_box">
-<table class="ctable"  style="width:100%;border:0px;">
-    <tbody>
-		<tr>
-		
-		<td class="committee_text"><b><span style="font-size:30px;color:#05104A;font-family:Helvetica,Times New Roman, Times, serif">Crisis Committee</span><br/><br />
-<table style="font-size:20px;border:0px">
-<tr>
-	<td style="color:#05104A;font-size:22px;font-family:Helvetica,Times New Roman, Times, serif">TBA</td>
-
-<!--<tr><td style="color:#05104A;font-size:22px;font-family:Helvetica,Times New Roman, Times, serif">Agenda</td><td style="color:#1E2E7F;padding-left:40px">Human rights violation in the middle east with special emphasis on Israel Palestine</td></tr><br/><tr><td>&nbsp;</td><td>&nbsp;</td><tr><td style="color:#05104A;font-size:22px;font-family:Helvetica,Times New Roman, Times, serif">Chair</td><td style="color:#1E2E7F;padding-left:40px">Hussain M Unjhawala</td></tr><tr><td style="color:#05104A;font-size:22px;font-family:Helvetica,Times New Roman, Times, serif">Vice-chair</td><td style="color:#1E2E7F;padding-left:40px">Tamanna Tasneem Krity</td></tr></table></b><br /></td>
-		 <td style="width: 30%;float:center;border:0px;margin-left:40px;padding-left:50px;padding-top:8px;"><img src="images/unhrcn.jpg" style="float:center;width:80%;"/></td>	
-		</tr>-->
-	</tbody>
-</table>
-</div>
-<br/>
-
-
-<br/>
-
-
-<br/>
-
-&nbsp;
-<br />
-<br />

@@ -301,3 +301,11 @@ span.name {
     line-height: 1.6em;
     color: black;
   }
+
+.committee{
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  position: relative;
+  padding-bottom: 0;
+}

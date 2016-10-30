@@ -9,7 +9,7 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic'>
     <link rel="stylesheet" href="assets/app.css"/>
     <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
 <link rel="stylesheet" href="http://flipclockjs.com/_themes/flipclockjs/css/flipclock.css">
@@ -43,12 +43,12 @@
         </md-content>
     </md-sidenav>
     <div layout="column" flex>
-        <md-toolbar class="" md-whiteframe="10" layout="column" >
+        <md-toolbar md-whiteframe="10" layout="column" >
             <div layout="row" layout-align="center center" md-colors="{background: 'accent-900'}">
                 <div>
                     <md-button class="md-icon-button" ng-click="openMenu()" hide-gt-sm aria-label="Toggle Menu" style="float: left;">
                         <md-icon md-svg-src="assets/svg/ic_menu_24px.svg"></md-icon>
-                    </md-button>
+                    </md-button>    
                 </div>
                 <h2 class="md-heading" style="white-space:nowrap;">
                     <md-icon md-svg-icon="logo" style="width:35px !important"></md-icon>
@@ -70,60 +70,8 @@
                 </md-toolbar-tools>
             </div>
         </md-toolbar>
-        <md-content layout flex>
-            <ui-view layout="column" name="content" flex></ui-view>
-        </md-content>
-        <div id="fullpage" style="position: absolute;">
-            <div class="section " id="section0" flex>
-            <div id="bg-section0">
-            </div>
-            <div id="content-section0">
-                <h1 id="mun_title" style="width: 100%">IIIT-H MUN 2017</h1>
-                <div class="clock fadeInLeft" style="width:auto;display: inline-block;zoom:0.5"></div>
-                <br>
-                <md-button ng-click="openForm()" class="md-raised md-accent">Register Now</md-button>
-                <br>
-                <svg enable-background="new 0 0 50 50" height="50px" id="Layer_1" version="1.1" viewBox="0 0 50 50" width="50px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><rect fill="none" height="50" width="50"/><polygon points="47.25,15 45.164,12.914 25,33.078 4.836,12.914 2.75,15 25,37.25 "/></svg>
-            </div>
-            </div>
-            <div class="section" id="section1">
-                <div ng-bind-html="renderHtml(letter)" class="box" layout-padding>
-                </div>
-            </div>
-            <div class="section" id="section2" layout='column'>
-                <h1 class="md-headline">Secretariat</h1>
-                <!-- 
-                <md-content class="md-padding" layout-xs="column" layout="row"> -->
-                <md-content style= "background: none" flex layout-padding layout-align="center center">
-                <md-grid-list md-cols-lg="4" md-cols-gt-lg="5" md-cols-xs="3" md-cols-sm="2" md-cols-md="4" md-row-height-gt-md="2:1" md-row-height-md="1:1" md-row-height="3:2" md-gutter-gt-md="16px" md-gutter-md="8px" md-gutter="4px">
-            <md-grid-tile ng-repeat="sec in secretariat" style="background:red;">
-                <md-card layout-fill>
-                    <md-card-title>
-                      <md-card-title-text>
-                        <span class="md-headline">{{sec.name}}</span>
-                        <span class="md-subhead">{{sec.position}}</span>
-                      </md-card-title-text>
-                      <md-card-content>
-                      <md-card-avatar>
-                        <img ng-src="images/MUN_SHOOT/{{sec.image}}.jpg" class="md-user-avatar" alt="image caption" style="width:70px; height: auto    ">
-                      </md-card-avatar>
-                      </md-card-content>
-                      
-                    </md-card-title>
-                    <md-card-actions layout="row" layout-align="end center">
-                      <md-button>Facebook</md-button>
-                      <md-button>Phone</md-button>
-                    </md-card-actions>
-                  </md-card>
-            </md-grid-tile>
-        </md-grid-list>
-        </md-content>
-              <!-- </md-content> -->
-            </div>
-            <div class="section" id="section3">
-                <h1>Partners</h1>
-            </div>
-        </div>
+        <ui-view layout="column" name="content" flex></ui-view>
+        <!-- -->
     </div>
 </div>
 
@@ -135,48 +83,11 @@
 <script src="src/routes.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
-    <script type="text/javascript" src="jquery.fullPage.js"></script>
-    <script src="http://flipclockjs.com/_themes/flipclockjs/js/flipclock/flipclock.js"></script>
+<script type="text/javascript" src="jquery.fullPage.js"></script>
+<script src="http://flipclockjs.com/_themes/flipclockjs/js/flipclock/flipclock.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
-        $('#fullpage').fullpage({
-            sectionsColor: ['black','#1bbc9b', '#4BBFC3', '#7BAABE', '#ccddff'],
-            resize : true,
-            css3: true,
-            easing: 'easeInOutCubic',
-            easingcss3: 'ease',
-            touchSensitivity: 15,
-            normalScrollElementTouchThreshold: 5,          //Accessibility
-            keyboardScrolling: true,
-            verticalCentered: false,
-            animateAnchor: true,
-            recordHistory: true,
-            responsiveWidth: 900,
-            afterLoad: function(){
-                setTimeout(function(){
-                    $('#mun_title').fitText();
-                },50);
-            },
-            afterResponsive:function(isResponsive){
-                if(isResponsive){
-                    document.body.innerHTML+="<style>.fp-section,.fp-slide,.fp-tableCell{height: auto !important;}</style>"
-                }
-                
-            }
-        });
-    });
-
-
-    var date = new Date(2017, 1, 26);
-    var now = new Date();
-    var diff = (date.getTime()/1000) - (now.getTime()/1000);
-
-    var clock = $('.clock').FlipClock(diff,{
-        clockFace: 'DailyCounter',
-        countdown: true
-    });  
+    
 </script>
 
 </html>

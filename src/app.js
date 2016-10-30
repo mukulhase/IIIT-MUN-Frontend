@@ -1,5 +1,4 @@
 
-
 angular
     .module('MUN', ['ui.router','ngMaterial', 'MUN.controllers', 'MUN.routes','sasrio.angular-material-sidenav'])
     .config(function($$mdSvgRegistry,$mdThemingProvider, $mdIconProvider,ssSideNavSectionsProvider){
@@ -54,7 +53,7 @@ angular
         $rootScope.menus = menus;
         $rootScope.menu = ssSideNav;
         $rootScope.secretariat = secretariat;
-
+        $rootScope.councils = councils;
         $rootScope.letter = letter;
         $rootScope.openMenu = function(){
             $mdSidenav('left').toggle();

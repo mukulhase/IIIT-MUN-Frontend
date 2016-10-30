@@ -54,5 +54,70 @@ var secretariat =
 },
 {
     'name':'Sriram Indurthi',
-    'position':'Founder General'
+    'position':'Founder General',
+    'image':'Sriram'
 }]
+
+var councils = 
+[
+{
+    'title':'Futuristic Security Council',
+    'content': '\'The United Nations remains our most important global actor. These days we are continuously reminded of the enormous responsibility of the Security Council to uphold international peace and stability.”\
+Anna Lindh\
+The UN Security Council is one of the six principal organs of the UN, tasked with the maintenance of international peace and security, as well as accepting new members to the UN and approving any changes to the United Nations Charter. It’s powers include the establishment of peacekeeping operations, imposing international sanctions, and the authorization of military action through resolutions. It is the only committee that is capable of issuing binding resolutions to member states.\'\
+At IIIT-H MUN 2016, FSC delegates will be taken a few years into the future, to discuss and resolve issues that a potential Security Council of that time would deal with. This committee will allow each delegate to test both their deductive and imaginative skills, and to create solutions to problems that generations of the future will have to eventually face, and resolve. \
+'
+},{
+    'title':'DISEC',
+    'content':'‘Terrorism festers where conflicts are endemic... and when human rights, human dignity, and human life are not protected and impunity prevails... We have to drown out shrill appeals to intolerance and extremism with sound calls for compassion and moderation.’ \
+ – Ban Ki-moon, UN Secretary-General\
+\
+\
+The Disarmament and International Security Committee (DISEC) is the First Committee of the United Nations General Assembly. It deals with disarmament and threats to global peace. In light of the events in Hiroshima and Nagasaki, the first resolution by DISEC was created in 1946 to address international concerns for the “Establishment of a Commission to Deal with the Problems Raised by the Discovery of Atomic Energy.”\
+DISEC is perhaps one of the most important General Assembly committees, and it is the only one other than the Main Committee of the General Assembly entitled to verbatim records coverage. \
+\
+\
+As DISEC members, delegates will debate and discuss about a wide variety of arms- and security-related issues, and pass resolutions that would help to make the world a safer and more peaceful place.\
+'
+
+},
+{
+    'title':'Human Rights Council',
+    'content':'“Human rights are not a privilege granted by the few, they are a liberty entitled to all, and human rights, by definition, include the rights of all humans, those in the dawn of life, the dusk of life, or the shadows of life.”\
+Kay Granger\
+\
+\
+The Human Rights Council is an inter-governmental body within the United Nations system responsible for strengthening the promotion and protection of human rights around the globe and for addressing situations of human rights violations and make recommendations on them. It has the ability to discuss all thematic human rights issues and situations that require its attention throughout the year. The Council is made up of 47 United Nations Member States which are elected by the UN General Assembly. \
+ \
+The UN HRC deals with topics that revolve around Human Rights violations - such as discrimination against minority groups, abuse of human rights, and human rights during conflict. It abides by the many different human rights conventions, and works with special rapporteurs and working groups to investigate human rights violations, and to keep states in check. \
+'
+},
+{
+    'title':'Office On Drugs and Crime',
+    'content':'\
+“Working together to take action against drugs, crime, corruption and terrorism, we can increase security and improve the lives of individuals, families and communities all over the world."\
+UNODC Executive DIrector, Yury Fedotov\
+\
+\
+A unique and specialised committee, the UNODC deals with the global fight against illicit drugs and international crime. It combats certain specialised problems faced by the international community, such as: organised crime and trafficking, crime prevention, crime prevention and criminal justice reform, drug abuse prevention and terrorism prevention.\
+\
+\
+Due to the broad scope of its work, the UNODC operates through all the regions of the world through an extensive network of field offices. It works via three main channels - field-based cooperation projects to help states combat the above problems, research and analytical work that provides a solid theoretical base for policy decisions on the above topics, and assisting states in the ratification and implementation of international treaties.\
+\
+\
+As UNODC members, delegates will confront problems specific to drugs and crime prevention, looking at these topics both from the national and global point of view, and be challenged to devise policies and solutions that would be relevant and implementable in today’s world.\
+'
+},
+{
+    'title':'All India Political Parties Meet',
+    'content':'“Unity in diversity is India\'s strength. There is simplicity in every Indian. There is unity in every corener of India. This is our strength”\
+-Narendra Modi, Prime Minister, India\
+\
+\
+AIPPM is a council consisting of political representatives of various parties, working together to discuss issues of national importance. \
+\
+\
+Members of this council must be aware that many of these issues are complex, and should keep in mind that there are more than a billion people in India - of diverse religions, castes, creeds and try to represent views inclusively. \
+'
+}
+]
