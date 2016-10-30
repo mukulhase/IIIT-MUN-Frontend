@@ -50,8 +50,9 @@ angular.module('MUN.controllers', [])
 
     })
 	.controller('GenericCtrl', function ($scope) {
-		if(loaded==true)
+		if(loaded==true){
 			$.fn.fullpage.destroy('all');
+		}
     })
     .controller('AboutCtrl', function ($scope) {
 
