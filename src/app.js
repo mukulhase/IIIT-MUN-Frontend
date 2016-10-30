@@ -1,16 +1,5 @@
-var links = [
-    {t:"Home",l:"index"},
-    {t:"Schedule",l:"schedule"},
-   // {t:"Executive Board",l:"eb"},
-    {t:"Committees",l:"committees"},
-   // {t:"Allotment",l:"resources"},
-    {t:"Contact",l:"contact"}
-];
-var menus = [{t:"About",l:[
-    {t:'About Felicity',l:'about-felicity'},
-    {t:'About IIIT-H MUN',l:'about-iiith-mun'},
-    {t:'About MUNs',l:'about-mun'}
-    ]}];
+
+
 angular
     .module('MUN', ['ui.router','ngMaterial', 'MUN.controllers', 'MUN.routes','sasrio.angular-material-sidenav'])
     .config(function($$mdSvgRegistry,$mdThemingProvider, $mdIconProvider,ssSideNavSectionsProvider){
@@ -60,12 +49,19 @@ angular
         ssSideNavSectionsProvider.initWithTheme($mdThemingProvider);
         ssSideNavSectionsProvider.initWithSections(sections);
 
-    }).run(function($rootScope, $mdSidenav, ssSideNav, $mdDialog){
+    }).run(function($rootScope, $mdSidenav, ssSideNav, $mdDialog, $sce){
         $rootScope.links = links;
         $rootScope.menus = menus;
         $rootScope.menu = ssSideNav;
+        $rootScope.secretariat = secretariat;
+
+        $rootScope.letter = letter;
         $rootScope.openMenu = function(){
             $mdSidenav('left').toggle();
+        };
+        $rootScope.renderHtml = function(html_code)
+        {
+            return $sce.trustAsHtml(html_code);
         };
         $rootScope.openForm = function(ev){
             $mdDialog.show({

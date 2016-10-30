@@ -253,7 +253,7 @@ span.name {
   -webkit-stroke-width: 5.3px;
    -webkit-stroke-color: #FFFFFF;
    -webkit-fill-color: #FFFFFF;
-   text-shadow: 1px 0px 20px  cyan;
+   text-shadow: 1px 0px 20px white;
    -webkit-transition: width 0.3s; /*Safari & Chrome*/
    transition: width 0.3s;
    -moz-transition: width 0.3s; /* Firefox 4 */
@@ -273,10 +273,21 @@ span.name {
     background-attachment: fixed;
   }
   #section0{
-    background-image: url(../images/mmm1.jpg);
+    background-image: url(../images/blurred.jpg);
     padding: 10% 0 0 0;
   }
-  
+  #section1{
+    background-image: url(../images/mmm.jpg);
+    padding: 1% 0 0 0;
+  }
+  #section2{
+    background-image: url(../images/mmm2.jpg);
+    padding: 6% 0 0 0;
+  }
+  #section3{
+    background-image: url(../images/mmm3.jpg);
+    padding: 6% 0 0 0;
+  }
   .section{
     text-align: center;
     color: white;
@@ -285,8 +296,8 @@ span.name {
     color: #000;
   }
   .box{
-    text-align: center;
-    font-size: 120%;
+    text-align: justify;
+    font-size: 110%;
     line-height: 1.6em;
     color: black;
   }
