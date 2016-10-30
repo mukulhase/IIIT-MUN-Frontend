@@ -1,4 +1,4 @@
-
+var loaded=false;
 angular
     .module('MUN', ['ui.router','ngMaterial', 'MUN.controllers', 'MUN.routes','sasrio.angular-material-sidenav'])
     .config(function($$mdSvgRegistry,$mdThemingProvider, $mdIconProvider,ssSideNavSectionsProvider){

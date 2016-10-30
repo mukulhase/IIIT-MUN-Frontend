@@ -29,6 +29,7 @@ angular.module('MUN.controllers', [])
 		                }
 		            }
 		        });
+			loaded=true;
 		    var date = new Date(2017, 1, 27);
 		    var now = new Date();
 		    var diff = (date.getTime()/1000) - (now.getTime()/1000);
@@ -49,6 +50,7 @@ angular.module('MUN.controllers', [])
 
     })
 	.controller('GenericCtrl', function ($scope) {
+		if(loaded==true)
 			$.fn.fullpage.destroy('all');
     })
     .controller('AboutCtrl', function ($scope) {
