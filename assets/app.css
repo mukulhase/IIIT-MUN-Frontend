@@ -691,8 +691,8 @@ span.name {
 }
 
   #section0,
-  #section1,
-  #section2,
+/*  #section1,
+*/  #section2,
   #section3{
     background-size: cover;
     background-attachment: fixed;
@@ -701,24 +701,21 @@ span.name {
     background-image: url(../images/blurred.jpg);
     padding: 10% 0 0 0;
   }
-  #section1{
+  /*#section1{
     background-image: url(../images/mmm.jpg);
     padding: 1% 0 0 0;
-  }
+  }*/
   #section2{
-    background-image: url(../images/mmm2.jpg);
+    background-image: url(../images/mmm1.jpg);
     padding: 6% 0 0 0;
   }
   #section3{
-    background-image: url(../images/mmm3.jpg);
+    background-image: url(../images/mmm2.jpg);
     padding: 6% 0 0 0;
   }
   .section{
     text-align: center;
     color: white;
-  }
-  #section3 h1{
-    color: #000;
   }
   .box{
     text-align: justify;
