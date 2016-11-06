@@ -2,14 +2,15 @@
 	<div flex=80 layout='column' layout-align="center" style="display: block;">
 		<h1 class="title md-headline">Committees</h1>
 
-		<div ng-repeat="council in councils" class="committee">
+		<div ng-repeat="c in committees" class="committee">
 			<md-toolbar>
 			<md-toolbar-tools>
 			</md-toolbar-tools>
-			<h3>{{council.title}}</h3>
+			<h3>{{c.title}}</h3>
 			</md-toolbar>
+			<img ng-src="images/{{c.image}}">
 			<div class="md-whiteframe-z1">
-			{{council.content}}
+			{{c.content}}
 				
 			</div>
 		</div>

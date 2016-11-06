@@ -13,15 +13,12 @@
         <div ng-bind-html="renderHtml(letter)" class="box" layout-padding>
         </div>
     </div>
-    <div class="section" id="section2" layout='column'>
+    <div class="section fp-auto-height-responsive" id="section2" layout='column'>
         <h1 class="md-display-3">Secretariat</h1>
         <md-content style= "background: none" flex layout-padding layout-align="center center">
             <md-grid-list md-cols-lg="4" md-cols-gt-lg="5" md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-row-height-gt-md="2:1" md-row-height-md="3:2" md-row-height="3:2" md-gutter-gt-md="16px" md-gutter-md="8px" md-gutter="4px">
                 <md-grid-tile ng-repeat="sec in secretariat">
                     <md-card>
-                                <md-card-avatar><!-- 
-                                    <img ng-src="images/MUN_SHOOT/{{sec.image}}.jpg" class="md-user-avatar" alt="image caption" style="width:40px; height: auto;"> -->
-                                </md-card-avatar>
                                 <md-card-title style="background: 
                                 linear-gradient(
                                   to bottom,
