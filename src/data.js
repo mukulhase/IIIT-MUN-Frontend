@@ -1,5 +1,5 @@
-var letter = "<h1 class=\"md-display-1\"><u> From the Secretary General </u></h1>\
-<div class=\"md-whiteframe-z3 md-body-2\" style= \"background: grey\">\
+var letter = "<h1 class=\"md-display-1\" style=\"text-align:center\"><u> From the Secretary General </u></h1>\
+<div class=\"md-whiteframe-z1 md-body-2\" style= \"background: \"white\">\
 <p class='md-headline'>\
 Greetings,\
 </p>\
@@ -15,7 +15,7 @@ We hope to have an enjoyable and exciting IIITH-MUN, and look forward to welcomi
 </p>\
 </div>\
 <div>\
-With regards<br>\
+With regards\
 <object type=\"image/svg+xml\" data=\"images/signature.svg\">\
   Your browser does not support SVG\
 </object>\
@@ -25,7 +25,7 @@ Siddhant Shrivastava,\
 Secretary General,\
 <br>\
 IIITH-MUN, 2017\
-</div>"
+"
 
 var links = [
     {t:"Home",l:"index"},
@@ -124,5 +124,19 @@ AIPPM is a council consisting of political representatives of various parties, w
 \
 Members of this council must be aware that many of these issues are complex, and should keep in mind that there are more than a billion people in India - of diverse religions, castes, creeds and try to represent views inclusively. \
 '
+}
+]
+var applications = [
+{
+    name:"Delegate",
+    link:"https://iiithmun.typeform.com/to/cd67cV?typeform-embed=embed-widget"
+},
+{
+    name:"International Press",
+    link:"https://iiithmun.typeform.com/to/cd67cV?typeform-embed=embed-widget"
+},
+{
+    name:"Delegation",
+    link:"https://iiithmun.typeform.com/to/WjHJLU?typeform-embed=embed-widget"
 }
 ]

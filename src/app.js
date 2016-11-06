@@ -1,6 +1,6 @@
 var loaded=false;
 angular
-    .module('MUN', ['ui.router','ngMaterial', 'MUN.controllers', 'MUN.routes','sasrio.angular-material-sidenav'])
+    .module('MUN', ['fullPage.js','ui.router','ngMaterial', 'MUN.controllers', 'MUN.routes','sasrio.angular-material-sidenav'])
     .config(function($$mdSvgRegistry,$mdThemingProvider, $mdIconProvider,ssSideNavSectionsProvider){
 
 
@@ -55,6 +55,7 @@ angular
         $rootScope.secretariat = secretariat;
         $rootScope.councils = councils;
         $rootScope.letter = letter;
+        $rootScope.applications = applications;
         $rootScope.openMenu = function(){
             $mdSidenav('left').toggle();
         };
@@ -62,12 +63,11 @@ angular
         {
             return $sce.trustAsHtml(html_code);
         };
-        $rootScope.openForm = function(ev){
+        $rootScope.openForm = function(link){
             $mdDialog.show({
               // controller: DialogController,
-              template: '<iframe style="width:90vh; height:90vh" src="https://iiithmun.typeform.com/to/cd67cV?typeform-embed=embed-widget"></iframe>',
+              template: '<iframe style="width:90vh; height:90vh" src='+link+'></iframe>',
               parent: angular.element(document.body),
-              targetEvent: ev,
               clickOutsideToClose:true,
               fullscreen: false // Only for -xs, -sm breakpoints.
             })

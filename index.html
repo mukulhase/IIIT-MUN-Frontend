@@ -24,6 +24,7 @@
 
 <body ng-app="MUN" layout="column" ng-cloak>
 <div layout="row" flex>
+<div>
     <md-sidenav
         class="md-sidenav-left"
         md-component-id="left"
@@ -37,11 +38,12 @@
             <ss-sidenav flex menu="menu"></ss-sidenav>
         </md-content>
     </md-sidenav>
+    </div>
     <div layout="column" flex>
         <md-toolbar md-whiteframe="10" layout="column" >
-            <div layout="row" layout-align="center center" md-colors="{background: 'accent-900'}">
+            <div layout="row" layout-align="left center" layout-align-gt-sm="center center" md-colors="{background: 'accent-900'}">
                 <div>
-                    <md-button class="md-icon-button" ng-click="openMenu()" hide-gt-sm aria-label="Toggle Menu" style="float: left;">
+                    <md-button class="md-icon-button" ng-click="openMenu()" hide-gt-sm aria-label="Toggle Menu">
                         <md-icon md-svg-src="assets/svg/ic_menu_24px.svg"></md-icon>
                     </md-button>    
                 </div>
@@ -61,7 +63,14 @@
                             </md-menu-item>
                         </md-menu-content>
                     </md-menu>
-                    <md-button ng-click="openForm()" class="md-raised md-accent">Register Now</md-button>
+                    <md-menu>
+                        <md-button  md-menu-origin ng-click="$mdOpenMenu()" class="md-raised md-accent">Register Now</md-button>
+                        <md-menu-content width="1">
+                            <md-menu-item ng-repeat="a in applications">
+                                <md-button ng-click="openForm(a.link)">{{a.name}}</md-button>
+                            </md-menu-item>
+                        </md-menu-content>
+                    </md-menu>
                 </md-toolbar-tools>
             </div>
         </md-toolbar>
@@ -77,9 +86,11 @@
 <script src="src/app.js"></script>
 <script src="src/controllers.js"></script>
 <script src="src/routes.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll-infinite.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 <script type="text/javascript" src="jquery.fullPage.js"></script>
+<script src="angular-fullPage.js"></script>
 <script type="text/javascript" src="flipclock.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.min.js"></script>
 </html>

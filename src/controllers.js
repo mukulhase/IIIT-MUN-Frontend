@@ -1,10 +1,8 @@
 angular.module('MUN.controllers', [])
 
 	.controller('HomeCtrl', function ($scope) {
-		$('#mun_title').fitText();
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-		            sectionsColor: ['black','#1bbc9b', '#4BBFC3', '#7BAABE', '#ccddff'],
+		$scope.mainOptions = {
+		            sectionsColor: ['black','whitesmoke', '#4BBFC3', 'white', '#ccddff'],
 		            resize : true,
 		            css3: true,
 		            easing: 'easeInOutCubic',
@@ -12,10 +10,8 @@ angular.module('MUN.controllers', [])
 		            touchSensitivity: 15,
 		            normalScrollElementTouchThreshold: 5,          //Accessibility
 		            keyboardScrolling: true,
-		            verticalCentered: false,
-		            animateAnchor: true,
-		            recordHistory: true,
 		            responsiveWidth: 900,
+		            //autoScrolling:false,
 		            afterLoad: function(){
 		                setTimeout(function(){
 		                    $('#mun_title').fitText();
@@ -28,7 +24,9 @@ angular.module('MUN.controllers', [])
 		                	},100)
 		                }
 		            }
-		        });
+		        }
+		$(document).ready(function() {
+
 			loaded=true;
 		    var date = new Date(2017, 1, 27);
 		    var now = new Date();
@@ -50,10 +48,6 @@ angular.module('MUN.controllers', [])
 
     })
 	.controller('GenericCtrl', function ($scope) {
-		if(loaded==true){
-			$.fn.fullpage.destroy('all');
-		}
     })
     .controller('AboutCtrl', function ($scope) {
-
     });
