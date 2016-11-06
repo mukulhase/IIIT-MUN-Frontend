@@ -15,7 +15,7 @@ We hope to have an enjoyable and exciting IIITH-MUN, and look forward to welcomi
 </p>\
 </div>\
 <div>\
-With regards\
+With regards<br>\
 <object type=\"image/svg+xml\" data=\"images/signature.svg\">\
   Your browser does not support SVG\
 </object>\
