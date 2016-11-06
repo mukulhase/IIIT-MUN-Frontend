@@ -710,15 +710,15 @@ span.name {
   #section3{
       background-image: url(../images/sec3.jpg);
   }
-  /*
-  #section3{
-    background-image: url(../images/mmm2.jpg);
-    padding: 6% 0 0 0;
-  }*/
+  #sponsor-list{
+      text-align: center;
+  }
+
   .section{
     text-align: center;
     color: white;
   }
+
   .box{
     text-align: justify;
     font-size: 110%;
