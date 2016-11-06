@@ -53,7 +53,7 @@ angular
         $rootScope.menus = menus;
         $rootScope.menu = ssSideNav;
         $rootScope.secretariat = secretariat;
-        $rootScope.councils = councils;
+        $rootScope.committees = committees;
         $rootScope.letter = letter;
         $rootScope.applications = applications;
         $rootScope.openMenu = function(){

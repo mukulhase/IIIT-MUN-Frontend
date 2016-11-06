@@ -63,9 +63,10 @@ var secretariat =
     'image':'Sriram'
 }]
 
-var councils = 
+var committees = 
 [
 {
+    'image':'fsc.png',
     'title':'Futuristic Security Council',
     'content': '\'The United Nations remains our most important global actor. These days we are continuously reminded of the enormous responsibility of the Security Council to uphold international peace and stability.”\
 Anna Lindh\
@@ -73,6 +74,7 @@ The UN Security Council is one of the six principal organs of the UN, tasked wit
 At IIIT-H MUN 2016, FSC delegates will be taken a few years into the future, to discuss and resolve issues that a potential Security Council of that time would deal with. This committee will allow each delegate to test both their deductive and imaginative skills, and to create solutions to problems that generations of the future will have to eventually face, and resolve. \
 '
 },{
+    'image':'disec.png',
     'title':'DISEC',
     'content':'‘Terrorism festers where conflicts are endemic... and when human rights, human dignity, and human life are not protected and impunity prevails... We have to drown out shrill appeals to intolerance and extremism with sound calls for compassion and moderation.’ \
  – Ban Ki-moon, UN Secretary-General\
@@ -87,6 +89,7 @@ As DISEC members, delegates will debate and discuss about a wide variety of arms
 
 },
 {
+    'image':'unhrc.png',
     'title':'Human Rights Council',
     'content':'“Human rights are not a privilege granted by the few, they are a liberty entitled to all, and human rights, by definition, include the rights of all humans, those in the dawn of life, the dusk of life, or the shadows of life.”\
 Kay Granger\
@@ -98,6 +101,7 @@ The UN HRC deals with topics that revolve around Human Rights violations - such 
 '
 },
 {
+    'image':'unodc.png',
     'title':'Office On Drugs and Crime',
     'content':'\
 “Working together to take action against drugs, crime, corruption and terrorism, we can increase security and improve the lives of individuals, families and communities all over the world."\
@@ -114,6 +118,7 @@ As UNODC members, delegates will confront problems specific to drugs and crime p
 '
 },
 {
+    'image':'aippm.png',
     'title':'All India Political Parties Meet',
     'content':'“Unity in diversity is India\'s strength. There is simplicity in every Indian. There is unity in every corener of India. This is our strength”\
 -Narendra Modi, Prime Minister, India\
