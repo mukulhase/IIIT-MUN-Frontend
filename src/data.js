@@ -61,6 +61,16 @@ var secretariat =
     'name':'Sriram Indurthi',
     'position':'Founder General',
     'image':'Sriram'
+},
+{
+    'name':'Mukul Hase',
+    'position':'USG Technology',
+    'image':''
+},
+{
+    'name':'Aurobindo Munagala',
+    'position':'USG Content',
+    'image':''
 }]
 
 var committees = 

@@ -10,42 +10,51 @@
         <svg class="animated infinite bounce" enable-background="new 0 0 50 50" height="50px" id="Layer_1" version="1.1" viewBox="0 0 50 50" width="50px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><rect fill="none" height="50" width="50"/><polygon stroke="white" points="47.25,15 45.164,12.914 25,33.078 4.836,12.914 2.75,15 25,37.25 "/></svg>
     </div>
     <div class="section" id="section1">
-        <div ng-bind-html="renderHtml(letter)" class="box" layout-padding>
+    <div style="width: 100%" layout="row" layout-align="center">
+        <div ng-bind-html="renderHtml(letter)" class="box" layout-padding flex="100" flex-gt-sm="80">
         </div>
     </div>
-    <div class="section fp-auto-height-responsive" id="section2" layout='column'>
-        <h1 class="md-display-3">Secretariat</h1>
-        <md-content style= "background: none" flex layout-padding layout-align="center center">
-            <md-grid-list md-cols-lg="4" md-cols-gt-lg="5" md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-row-height-gt-md="2:1" md-row-height-md="3:2" md-row-height="3:2" md-gutter-gt-md="16px" md-gutter-md="8px" md-gutter="4px">
-                <md-grid-tile ng-repeat="sec in secretariat">
-                    <md-card>
-                                <md-card-title style="background: 
-                                linear-gradient(
-                                  to bottom,
-                                  rgba(0, 0, 0, 0),
-                                  rgba(0, 0, 0, 0.6)
-                                  ),url('images/MUN_SHOOT/{{sec.image}}.jpg');background-size: cover;text-shadow: 0 1px 0 black;color: white">
-                                  <md-card-title-text layout-align="center center" >
-                                    <span class="md-headline">{{sec.name}}</span>
-                                    <span class="md-subhead">{{sec.position}}</span>
-                                </md-card-title-text>
-                            </md-card-title>
-                            <md-card-content>
-                                <md-card-actions layout="row" layout-align="end center">
-                                  <md-button>Facebook</md-button>
-                                  <md-button>Phone</md-button>
-                              </md-card-actions>
-                          </md-card-content>
-                      </md-card>
-                  </md-grid-tile>
-              </md-grid-list>
-          </md-content>
-      </div>
-      <div class="section" id="section3">
-        <h1 class="md-display-3">Partners</h1>
-        <h2 class="md-headline">Hello</h2>
-
-	<p style="color:black">popopopopopopop</p>
-
     </div>
+    <div class="section fp-auto-height-responsive" id="section2" layout='column'>
+        <h1 style="display: block; position: absolute; width: 100%; text-align: center" class="md-display-2">Secretariat</h1>
+        <div class="slide" ng-repeat="i in range(0,secretariat.length-1,fit)">
+            <div layout="row" layout-align="center center">
+                <div class="sec-box" style="width:400px;height:400px" ng-repeat="j in range(i,i+fit-1)" >
+                    <md-card ng-if="secretariat[j]" class="secretariat" style="background: 
+                            linear-gradient(
+                              to bottom,
+                              rgba(0, 0, 0, 0),
+                              rgba(0, 0, 0, 0.6)
+                              ),url('images/MUN_SHOOT/{{secretariat[j].image}}.jpg');" >
+                    <div style="height:300px">
+
+                    </div>
+                    <md-card-title>
+                        <md-card-title-text layout-align="center center" >
+                            <span class="md-headline">{{secretariat[j].name}}</span>
+                            <span class="md-subhead">{{secretariat[j].position}}</span>
+                        </md-card-title-text>
+                    </md-card-title>
+                    <md-card-content>
+                        <md-card-actions layout="row" layout-align="center center">
+                        <md-button>
+                            <i class="fa fa-facebook fa-4" aria-hidden="true"></i>
+                        </md-button>
+                        <md-button>
+                            <i class="fa fa-phone fa-4" aria-hidden="true"></i>
+                        </md-button>
+                        </md-card-actions>
+                    </md-card-content>
+                </md-card>
+            </div> 
+        </div>
+    </div>
+</div>
+<div class="section" id="section3">
+    <h1 class="md-display-3">Partners</h1>
+    <h2 class="md-headline">Hello</h2>
+    <h2 class="md-display-1">I love you<span style="color: white; text-shadow: 1 1 1 1 black">r Personalitits</span></h2>
+    <p style="color:black">popopopopopopop</p>
+
+</div>
 </div> 

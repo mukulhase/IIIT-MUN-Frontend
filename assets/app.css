@@ -704,9 +704,9 @@ span.name {
     background-image: url(../images/mmm.jpg);
     padding: 1% 0 0 0;
   }*/
-  #section2{
+/*  #section2{
     background-image: url(../images/mmm1.jpg);
-  }
+  }*/
   /*
   #section3{
     background-image: url(../images/mmm2.jpg);
@@ -714,7 +714,6 @@ span.name {
   }*/
   .section{
     text-align: center;
-    color: white;
   }
   .box{
     text-align: justify;
@@ -729,4 +728,23 @@ span.name {
   margin-bottom: 16px;
   position: relative;
   padding-bottom: 0;
+}
+
+.fp-next {
+  border-left-color: rgb(66,66,66) !important;
+}
+.fp-prev {
+  border-right-color: rgb(66,66,66) !important;
+}
+.sec-box {
+    margin: 30px;
+}
+.secretariat {
+  text-align:bottom;
+  background-size: cover !important;
+  text-shadow: 0 1px 0 black;
+  color: white;
+  border-radius: 50%;
+  width:400px;
+  height:400px;
 }
