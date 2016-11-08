@@ -3,33 +3,20 @@
     Thank you for your interest in IIITH-MUN’16. We are happy to help you with any questions relating to our conference. We look forward to hearing from you!
 </p>
 <br>
-<div layout="row" layout-align="center"  flex>
-    <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch>
+<div layout="row" layout-align="center">
+    <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch ng-repeat="c in contact">
         <md-card-title>
             <md-card-title-text>
-                <span class="md-headline">Prateek Jain</span>
-                <span class="md-subhead">Secretary General</span>
+                <span class="md-headline">{{c.name}}</span>
+                <span class="md-subhead">{{c.position || "Unknown"}}</span>
             </md-card-title-text>
         </md-card-title>
         <md-card-actions layout="column" layout-align="end center">
-            <md-button>prateek.jain.cura@gmail.com</md-button>
-            <md-button>9581528077</md-button>
-        </md-card-actions>
-    </md-card>
-    <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch>
-        <md-card-title>
-            <md-card-title-text>
-                <span class="md-headline">Rohan bhatial</span>
-                <span class="md-subhead">Director General</span><br>
-            </md-card-title-text>
-        </md-card-title>
-        <md-card-actions layout="column" layout-align="end center">
-            <md-button>Rohan.bhatial.cura@gmail.com</md-button>
-            <md-button>8179749049</md-button>
+            <md-button>{{c.email}}</md-button>
+            <md-button>{{c.phone}}</md-button>
         </md-card-actions>
     </md-card>
 </div>
-<br>
 <div id="respond">
 
     <form action="https://formspree.io/mukulhase@gmail.com" method="post">

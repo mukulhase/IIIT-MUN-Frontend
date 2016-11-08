@@ -155,3 +155,54 @@ var applications = [
     link:"https://iiithmun.typeform.com/to/WjHJLU?typeform-embed=embed-widget"
 }
 ]
+var schedule = [
+{
+   'day':"27th January",
+   'events':[
+        "Registration",
+        "Opening ceremony",
+        "Orientation",
+        "Lunch",
+        "1st committee session",
+        "Tea/Snacks break",
+        "1st Committee session continues",
+        "Dinner",
+        "Social night (Felicity night), if any",
+        "Buses depart to delegate accommodation "
+    ]
+},
+{
+    'day':"28th January",
+    'events':[
+        "Breakfast3",
+        "2nd Committee session",
+        "Lunch",
+        "3rd committee session",
+        "Tea/Snacks break",
+        "Break",
+        "Dinner",
+        "Social night",
+    ]
+},
+{
+    'day':'29th January',
+    'events':[
+        "Breakfast",
+        "4th committee session",
+        "Lunch",
+        "5th committee session",
+        "Closing ceremony"
+    ]
+}
+];
+contact = [
+{
+    'name': 'Saumya Prabodh',
+    'phone': '09618207958',
+    'email': 'srivastava.saumya2811@gmail.com'
+},
+{
+    'name': 'Aditya Bharti',
+    'phone': '9618153254',
+    'email': ''
+}];

@@ -56,6 +56,8 @@ angular
         $rootScope.committees = committees;
         $rootScope.letter = letter;
         $rootScope.applications = applications;
+        $rootScope.schedule = schedule;
+        $rootScope.contact = contact;
         $rootScope.openMenu = function(){
             $mdSidenav('left').toggle();
         };

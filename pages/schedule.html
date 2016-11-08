@@ -1,52 +1,16 @@
 <h1 class="title" style="font-size:32px;text-transform:none;text-align:center;">Schedule</h2>
-<p>
-<!--<b style="font-size:23px;text-align:center;">IIIT-Hyderabad MUN to take place in 20th-22nd February</b> I really don't think this line is required - Pranav -->
-<br/>
-</p>
-<br>
-<div layout-align="center" style="display: inline-block;text-align: center;">
-<md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch>
-        <md-card-title>
-            <md-card-title-text>
-                <span class="md-headline" style="text-align:center;font-size:22px;">20 Feb</span>
-                <span class="md-subhead" style="text-align:center;">
-                        <p>
-                                Opening Ceremony : 10 am - 12 noon<br/>
-                                Introductory session : 12 noon - 2 pm<br/>
-                                First Committee session : 3 pm - 6 pm<br/>
-                        </p>
-                </span>
-            </md-card-title-text>
-        </md-card-title>
-</md-card>
-<br>
-<md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch>
-        <md-card-title>
-            <md-card-title-text>
-                <span class="md-headline" style="text-align:center;font-size:22px;">21 Feb</span>
-                <span class="md-subhead" style="text-align:center;">
-                        <p>
-                                Second session : 10 am - 1 pm<br/>
-                                Third Session : 2 pm - 5 pm<br/>
-                                Social Night 1 : 7 pm onwards<br/>
-                        </p>
-                </span>
-            </md-card-title-text>
-        </md-card-title>
-</md-card>
-<br>
-<md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch>
-        <md-card-title>
-            <md-card-title-text>
-                <span class="md-headline" style="text-align:center;font-size:22px;">22 Feb</span>
-                <span class="md-subhead" style="text-align:center;">
-                        <p>
-                                Fourth Session : 10 am - 1 pm<br/>
-                                Fifth Session : 2 pm - 5 pm<br/>
-                                Social Night 2 : 7 pm onwards<br/>
-                        </p>
-                </span>
-            </md-card-title-text>
-        </md-card-title>
-</md-card>
+<div style="width: 100%" layout="row" layout-align="center">
+    <div>
+        <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch ng-repeat="s in schedule">
+                <md-card-title>
+                    <md-card-title-text>
+                        <span class="md-headline" style="text-align:center;font-size:22px;">{{s.day}}</span>
+                        <span class="" style="text-align:center;" ng-repeat="e in s.events">
+                            {{e}}<br>
+                            <span ng-if="!$last">|</span>
+                        </span>
+                    </md-card-title-text>
+                </md-card-title>
+        </md-card>
+    </div>
 </div>
