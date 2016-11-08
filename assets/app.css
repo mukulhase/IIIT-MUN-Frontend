@@ -172,7 +172,7 @@ span.name {
 .flip-clock-meridium {
   background: none !important;
   box-shadow: 0 0 0 !important;
-  font-size: 36px !important; }
+  font-size: 216px !important; }
 
 .flip-clock-meridium a { color: #313333; }
 
@@ -706,15 +706,20 @@ span.name {
   }*/
 /*  #section2{
     background-image: url(../images/mmm1.jpg);
+<<<<<<< HEAD
   }*/
-  /*
+
   #section3{
-    background-image: url(../images/mmm2.jpg);
-    padding: 6% 0 0 0;
-  }*/
+      background-image: url(../images/sec3.jpg);
+  }
+  #sponsor-list{
+      text-align: center;
+  }
+
   .section{
     text-align: center;
   }
+
   .box{
     text-align: justify;
     font-size: 110%;
@@ -729,7 +734,6 @@ span.name {
   position: relative;
   padding-bottom: 0;
 }
-
 .fp-next {
   border-left-color: rgb(66,66,66) !important;
 }
