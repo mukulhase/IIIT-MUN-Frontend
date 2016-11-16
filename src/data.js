@@ -40,6 +40,7 @@ var menus = [{t:"About",l:[
     {t:'About IIIT-H MUN',l:'about-iiith-mun'},
     {t:'About MUNs',l:'about-mun'}
     ]}];
+
 var secretariat = 
 [
 {
@@ -198,11 +199,13 @@ var schedule = [
 contact = [
 {
     'name': 'Saumya Prabodh',
+    'position':'USG Marketing',
     'phone': '09618207958',
     'email': 'srivastava.saumya2811@gmail.com'
 },
 {
     'name': 'Aditya Bharti',
+    'position': 'USG Administration',
     'phone': '9618153254',
-    'email': ''
+    'email': 'adibhar97@gmail.com'
 }];

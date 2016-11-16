@@ -4,7 +4,7 @@
 </p>
 <br>
 <div layout="row" layout-align="center">
-    <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch ng-repeat="c in contact">
+    <md-card style="min-height: 25vh" md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch ng-repeat="c in contact">
         <md-card-title>
             <md-card-title-text>
                 <span class="md-headline">{{c.name}}</span>
@@ -49,5 +49,5 @@
         <input class="md-button" name="reset" type="reset" id="reset" tabindex="5" value="Reset Form" />
         </div>
     </md-content>
-</form>
+    </form>
 </div>
