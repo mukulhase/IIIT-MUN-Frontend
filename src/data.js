@@ -46,17 +46,17 @@ var secretariat =
 {
     'name':'Siddhant Shrivastava',
     'position':'Secretary General',
-    'image':'Sid.png'
+    'image':'sid.png'
 },
 {
     'name':'Aayush Naik',
     'position':'Director General',
-    'image':'Aayush.png'
+    'image':'aayush.png'
 },
 {
     'name':'Aditya Bharti',
     'position':'USG Administration',
-    'image':'Adi.png'
+    'image':'adi.png'
 },
 {
     'name':'Sriram Indurthi',
