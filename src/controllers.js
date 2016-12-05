@@ -13,21 +13,37 @@ angular.module('MUN.controllers', [])
 		$(window).resize(function() {
 			$scope.fit = Math.floor($(window).width()/464);
 		});
-		
+		$('.section > div > h1').hide();
 		$scope.mainOptions = {
             sectionsColor: ['black','whitesmoke', 'whitesmoke', 'white', '#ccddff'],
             resize : true,
             css3: true,
             easing: 'easeInOutCubic',
             easingcss3: 'ease',
+            navigation: true,
+			navigationPosition: 'right',
+			slidesNavigation: true,
             touchSensitivity: 15,
             normalScrollElementTouchThreshold: 5,          //Accessibility
             keyboardScrolling: true,
             //autoScrolling:false,
-            afterLoad: function(){
-                setTimeout(function(){
-                    $('#mun_title').fitText();
-                },50);
+            afterLoad: function(anchor, index){
+            	console.log(index);
+    			$('#section1 > div > div').hide();
+				$('#mun_title').animateCss('fadeInDown');
+            	$('#section3 > div > h1').animateCss('bounce');
+            	if(index == 2){
+					$('#section1 > div > div').fadeIn();
+				}else{
+					if(index == 1){
+						setTimeout(function(){
+						    $('#mun_title').fitText();
+						},50);
+					}
+					if(index == 4){
+						// $('.section > div > div').animateCss('flash');
+					}
+				}
             },
             afterResponsive:function(isResponsive){
                 if(isResponsive){
@@ -35,7 +51,7 @@ angular.module('MUN.controllers', [])
                     	document.body.innerHTML+="<style>.fp-section,.fp-slide,.fp-tableCell{height: auto !important;}</style>"
                 	},100)
                 }
-            }
+            },
         }
 		$(document).ready(function() {
 

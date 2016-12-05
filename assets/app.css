@@ -689,11 +689,7 @@ span.name {
     padding:0;
     color:#444;
 }
-
-  #section0,
-/*  #section1,
-*/  #section2,
-  #section3{
+.section{
     background-size: cover;
     background-attachment: fixed;
   }
@@ -704,14 +700,6 @@ span.name {
     background-image: url(../images/mmm.jpg);
     padding: 1% 0 0 0;
   }*/
-/*  #section2{
-    background-image: url(../images/mmm1.jpg);
-<<<<<<< HEAD
-  }*/
-
-  #section3{
-      background-image: url(../images/sec3.jpg);
-  }
   #sponsor-list{
       text-align: center;
   }
@@ -751,4 +739,7 @@ span.name {
   border-radius: 50%;
   width:400px;
   height:400px;
+}
+.clock {
+  font-size: large;
 }

@@ -26,13 +26,6 @@
 
 <body ng-app="MUN" layout="column" ng-cloak>
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8&appId=1241015282609806";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 <div layout="row" flex>
 <div>
     <md-sidenav
@@ -46,7 +39,6 @@
         <!-- <md-content flex role="navigation" ss-style-color="{'background-color': 'primary.default'}"> -->
         <md-content flex role="navigation" ss-style-color="{'background-color': 'primary.300'}">
             <ss-sidenav flex menu="menu"></ss-sidenav>
-            <div class="fb-page" data-href="https://www.facebook.com/iiithmun/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/iiithmun/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/iiithmun/">IIITH MUN</a></blockquote></div>
         </md-content>
     </md-sidenav>
     </div>
@@ -97,6 +89,15 @@
 <script src="src/controllers.js"></script>
 <script src="src/routes.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">$.fn.extend({
+    animateCss: function (animationName) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        this.addClass('animated ' + animationName).one(animationEnd, function() {
+            $(this).removeClass('animated ' + animationName);
+        });
+    }
+});</script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 <script type="text/javascript" src="src/jquery.fullPage.min.js"></script>
 <script type="text/javascript" src="src/angularfullpage.js"></script>
