@@ -46,22 +46,22 @@ var secretariat =
 {
     'name':'Siddhant Shrivastava',
     'position':'Secretary General',
-    'image':'Sid'
+    'image':'Sid.png'
 },
 {
     'name':'Aayush Naik',
     'position':'Director General',
-    'image':'Aayush'
+    'image':'Aayush.png'
 },
 {
     'name':'Aditya Bharti',
     'position':'USG Administration',
-    'image':'Adi'
+    'image':'Adi.png'
 },
 {
     'name':'Sriram Indurthi',
     'position':'Founder General',
-    'image':'Sriram'
+    'image':'Sriram.jpg'
 },
 {
     'name':'Mukul Hase',
@@ -209,3 +209,11 @@ contact = [
     'phone': '9618153254',
     'email': 'adibhar97@gmail.com'
 }];
+sponsors = [
+{
+    'image': "cid.jpg"
+},{
+    'image': "iiit-new.png"
+},{
+    'image': "oyo.png"
+}]

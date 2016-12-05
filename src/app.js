@@ -58,6 +58,7 @@ angular
         $rootScope.applications = applications;
         $rootScope.schedule = schedule;
         $rootScope.contact = contact;
+        $rootScope.sponsors =  sponsors;
         $rootScope.openMenu = function(){
             $mdSidenav('left').toggle();
         };
