@@ -1,6 +1,6 @@
 <md-content layout="row" layout-padding style="width: 100%" layout-align="center">
 
-	<div flex=80 layout='column' layout-align="center" style="display: block;">
+	<div flex=95 flex-gt-sm=80 layout='column' layout-align="center" style="display: block;">
 		<h1 class="title md-display-2">Committees</h1>
 
 		<div ng-repeat="c in committees" class="committee">
@@ -9,10 +9,11 @@
 			</md-toolbar-tools>
 			<h3 layout-padding>{{c.title}}</h3>
 			</md-toolbar>
-			<div class="md-whiteframe-z1" layout=row layout-padding>
-			<div>
-			<img ng-src="images/{{c.image}}" style="width:25vw"></div>
-			<div class="md-body-2">{{c.content}}</div>
+			<div class="md-whiteframe-z1" layout-gt-sm=row layout=column layout-padding>
+			<div flex=30 >
+				<img ng-src="images/{{c.image}}" style="width:100%">
+			</div>
+			<div flex=70 class="md-body-2">{{c.content}}</div>
 				
 			</div>
 		</div>
