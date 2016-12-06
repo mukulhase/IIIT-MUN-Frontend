@@ -21,8 +21,7 @@ angular.module('MUN.controllers', [])
             easing: 'easeInOutCubic',
             easingcss3: 'ease',
             navigation: true,
-			navigationPosition: 'right',
-			slidesNavigation: true,
+	navigationPosition: 'right',
             touchSensitivity: 15,
             normalScrollElementTouchThreshold: 5,          //Accessibility
             keyboardScrolling: true,
