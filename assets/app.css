@@ -730,6 +730,11 @@ span.name {
 }
 .sec-box {
     margin: 30px;
+    width: 400px;
+    height: 400px;
+}
+.sec-pic{
+  height: 300px;
 }
 .secretariat {
   text-align:bottom;

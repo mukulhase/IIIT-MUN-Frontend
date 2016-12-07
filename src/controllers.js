@@ -9,10 +9,14 @@ angular.module('MUN.controllers', [])
 		    }
 		    return input;
 		};
-		$scope.fit = Math.floor($(window).width()/464);
-		$(window).resize(function() {
+		function fitRefresh(){
 			$scope.fit = Math.floor($(window).width()/464);
-		});
+			if($scope.fit==0){
+				injectStyles('.sec-box,.secretariat{height:200px !important;width:200px !important;}.sec-pic{height:50px!important;}');
+			}
+		}
+		fitRefresh();
+		$(window).resize(fitRefresh);
 		$('.section > div > h1').hide();
 		$scope.mainOptions = {
             sectionsColor: ['black','whitesmoke', 'whitesmoke', 'white', '#ccddff'],
