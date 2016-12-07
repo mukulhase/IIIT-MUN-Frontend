@@ -1,5 +1,5 @@
 var letter = "<h1 class=\"md-display-1\" style=\"text-align:center\"><u> From the Secretary General </u></h1>\
-<div class=\"md-whiteframe-z1 md-body-2\" style= \"background: \"white\">\
+<div class=\"md-whiteframe-z1 md-body-2\" style= \"max-height: 40vh;background:white \" id=\"letter\" >\
 <p class='md-headline'>\
 Greetings,\
 </p>\
@@ -12,7 +12,7 @@ This year, we will be hosting the MUN in partnership with CID (Conclave of Inter
 </p>\
 <p>\
 We hope to have an enjoyable and exciting IIITH-MUN, and look forward to welcoming all of you in January 2017.\
-</p>\
+</p><a class='md-button readmore'>Read More</a>\
 </div>\
 <div>\
 With regards<br>\

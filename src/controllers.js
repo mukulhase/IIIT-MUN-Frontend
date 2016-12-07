@@ -1,6 +1,7 @@
 angular.module('MUN.controllers', [])
 
 	.controller('HomeCtrl', function ($scope) {
+
 		$scope.range = function(min, max, step) {
 		    step = step || 1;
 		    var input = [];
@@ -32,11 +33,11 @@ angular.module('MUN.controllers', [])
             //autoScrolling:false,
             afterLoad: function(anchor, index){
             	console.log(index);
-    			$('#section1 > div > div').hide();
 				$('#mun_title').animateCss('fadeInDown');
             	$('#section3 > div > h1').animateCss('bounce');
             	if(index == 2){
 					$('#section1 > div > div').fadeIn();
+					$('#letter').dotdotdot({'ellipsis': '...','after':'a.readmore'});
 				}else{
 					if(index == 1){
 						setTimeout(function(){
