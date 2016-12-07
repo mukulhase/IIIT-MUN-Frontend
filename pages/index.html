@@ -3,9 +3,14 @@
         <h1 id="mun_title" style="width: 100%">IIIT-H MUN 2017</h1>
         <div class="clock fadeInLeft" style="width:auto;display: inline-block;zoom:0.5"></div>
         <br/>
-        <md-button ng-click="openForm()" class="md-raised md-accent">Register Now</md-button>
-        <br/>
-        <br/>
+        <md-menu>
+            <md-button  md-menu-origin ng-click="$mdOpenMenu()" class="md-raised md-accent">Register Now</md-button>
+            <md-menu-content width="1">
+                <md-menu-item ng-repeat="a in applications">
+                    <md-button ng-click="openForm(a.link)">{{a.name}}</md-button>
+                </md-menu-item>
+            </md-menu-content>
+        </md-menu>
         <br/>
         <svg class="animated infinite bounce" enable-background="new 0 0 50 50" height="50px" id="Layer_1" version="1.1" viewBox="0 0 50 50" width="50px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <rect fill="none" height="50" width="50"/>
@@ -22,7 +27,7 @@
         <h1 style="display: block; position: absolute; width: 100%; text-align: center" class="md-display-2">Secretariat</h1>
         <div class="slide" ng-repeat="i in range(0,secretariat.length-1,fit)">
             <div layout="row" layout-align="center center">
-                <div class="sec-box" style="width:400px;height:400px" ng-repeat="j in range(i,i+fit-1)" >
+                <div class="sec-box" style="width: 400px;height: 400px;" ng-repeat="j in range(i,i+fit-1)" >
                     <md-card ng-if="secretariat[j]" class="secretariat" style="background:
                     linear-gradient(
                     to bottom,
