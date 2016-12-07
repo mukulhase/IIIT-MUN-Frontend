@@ -48,7 +48,7 @@ angular
         ssSideNavSectionsProvider.initWithTheme($mdThemingProvider);
         ssSideNavSectionsProvider.initWithSections(sections);
 
-    }).run(function($rootScope, $mdSidenav, ssSideNav, $mdDialog, $sce){
+    }).run(function($rootScope, $mdSidenav, ssSideNav, $mdDialog, $sce, $location){
         $rootScope.links = links;
         $rootScope.menus = menus;
         $rootScope.menu = ssSideNav;
@@ -59,6 +59,9 @@ angular
         $rootScope.schedule = schedule;
         $rootScope.contact = contact;
         $rootScope.sponsors =  sponsors;
+        $rootScope.go = function ( path ) {
+            $location.path( path );
+        };
         $rootScope.openMenu = function(){
             $mdSidenav('left').toggle();
         };
