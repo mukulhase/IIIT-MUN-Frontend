@@ -14,6 +14,7 @@ angular.module('MUN.controllers', [])
 			$scope.fit = Math.floor($(window).width()/464);
 			if($scope.fit==0){
 				injectStyles('.sec-box,.secretariat{height:200px !important;width:200px !important;}.sec-pic{height:50px!important;}');
+				$scope.fit = Math.floor($(window).width()/234);
 			}
 		}
 		fitRefresh();
