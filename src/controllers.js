@@ -60,7 +60,7 @@ angular.module('MUN.controllers', [])
 		$(document).ready(function() {
 
 			loaded=true;
-		    var date = new Date(2017, 1, 27);
+		    var date = new Date(2017, 0, 27);
 		    var now = new Date();
 		    var diff = (date.getTime()/1000) - (now.getTime()/1000);
 
