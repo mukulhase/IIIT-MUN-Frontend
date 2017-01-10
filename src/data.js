@@ -30,7 +30,7 @@ IIITH-MUN, 2017\
 var links = [
     {t:"Home",l:"index"},
     {t:"Schedule",l:"schedule"},
-   // {t:"Executive Board",l:"eb"},
+    {t:"Executive Board",l:"eb"},
     {t:"Committees",l:"committees"},
    // {t:"Allotment",l:"resources"},
     {t:"Contact",l:"contact"}
@@ -43,17 +43,16 @@ var menus = [{t:"About",l:[
 
 var secretariat = 
 [
-{'position':'Secretary General','image':'sid.png','name': 'Siddhant Shrivastava', 'pno': '+96895162722', 'email': 'siddhant.shrivastava23@gmail.com'},
+{'position':'Secretary General','image':'sid.png','name': 'Siddhant Shrivastava', 'pno': '+917799380007', 'email': 'siddhant.shrivastava23@gmail.com'},
 {'position':'Director General','name': 'Aayush Naik','image':'aayush.png', 'pno': '+96567056579', 'email': 'aayushnaik17@gmail.com'},
 {'position':'USG Admin','name': 'Aditya Bharti', 'pno': '+919618153254','image':'adi.png', 'email': 'adibhar97@gmail.com'},
-{'position':'USG Marketing','name': 'Saumya Prabodh', 'pno': '919618207958','image':'saumya.jpg', 'email': 'srivastava.saumya2811@gmail.com'},
-{'position':'USG Policy','name': 'Nitin John Raj', 'pno': '+919148157997','image':'nitin.jpg', 'email': 'nitinjohnraj@gmail.com'},
+{'name':'Sriram Indurthi','position':'Founder General','image':'Sriram.jpg'},
 {'position':'USG Design','name': 'Pranav Nair', 'pno': '+919642071222','image':'pranav.jpg', 'email': 'pranavnair97@gmail.com'},
+{'position':'USG Policy','name': 'Nitin John Raj', 'pno': '+919148157997','image':'nitin.jpg', 'email': 'nitinjohnraj@gmail.com'},
 {'position':'USG Content Writing','name': 'Aurobindo Mungala', 'pno': '+919566067176','image':'auro.jpg', 'email': 'koolschoolfan@gmail.com'},
 {'position':'USG Technology','name': 'Mukul Hase', 'pno': '9652743554','image':'mukul.jpg', 'email': 'mukulhase@gmail.com'},
 {'position':'USG Hospitality','name': 'Riya Pal', 'pno': '+918886222863','image':'riya.jpg', 'email': 'riya.pal@gmail.com'},
-{'position':'USG Design','name': 'Suhas Darsi', 'pno': '9000725505', 'email': 'darsisuhas666@gmail.com'},
-{'name':'Sriram Indurthi','position':'Founder General','image':'Sriram.jpg'}
+{'position':'USG Marketing','name': 'Saumya Prabodh', 'pno': '919618207958','image':'saumya.jpg', 'email': 'srivastava.saumya2811@gmail.com'},
 ];
 
 var committees = 
