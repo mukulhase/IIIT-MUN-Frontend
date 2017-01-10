@@ -32,7 +32,7 @@ var links = [
     {t:"Schedule",l:"schedule"},
     {t:"Executive Board",l:"eb"},
     {t:"Committees",l:"committees"},
-   // {t:"Allotment",l:"resources"},
+    {t:"Allotment",l:"allotment"},
     {t:"Contact",l:"contact"}
 ];
 var menus = [{t:"About",l:[
@@ -67,6 +67,16 @@ At IIIT-H MUN 2016, FSC delegates will be taken a few years into the future, to 
 ',
     'agendas':[
     'Fall of Europe: Analysing the situation at hand post the breakdown of the European Union'
+    ],
+    'eb':[
+    {'name': 'Sourya Banerjee',
+    'position':"President"},{
+        'name':'Yash Raj Singh',
+        'position': 'Vice President'
+    },{
+        'name':'Pragathi Jha',
+        'position':'Rapporteur'
+    }
     ]
 
 },{
@@ -84,7 +94,17 @@ As DISEC members, delegates will debate and discuss about a wide variety of arms
 '
 , 'agendas':[
 'Militarization of anti-state forces',
-'The need for drones and lethal autonomous weapons']
+'The need for drones and lethal autonomous weapons'],
+'eb':[
+    {
+        'name': 'Adarsh Peri',
+        'position':"Rapporteur"
+    },
+    {
+        'name':'Syed Asim',
+        'position': 'Chair Person'
+    }
+    ]
 },
 {
     'image':'unhrc.png',
@@ -99,7 +119,19 @@ The UN HRC deals with topics that revolve around Human Rights violations - such 
 ',
 'agendas':[
 'Discussing rights of prisoners of war'
-]
+],
+'eb':[
+{
+    'name':"Soumith Kasetty"
+    ,'position':"Chair"
+},{
+    'name':"Ankit Kapoor"
+    ,'position':"Vice Chair Person"
+},
+{
+    'name':"Suravi Patnaik"
+    ,'position':"Rapporteur"
+}]
 },
 {
     'image':'unodc.png',
@@ -118,7 +150,19 @@ Due to the broad scope of its work, the UNODC operates through all the regions o
 As UNODC members, delegates will confront problems specific to drugs and crime prevention, looking at these topics both from the national and global point of view, and be challenged to devise policies and solutions that would be relevant and implementable in today’s world.\
 ',
 'agendas':[
-'Considering legalizing Marijuana globally']
+'Considering legalizing Marijuana globally'],
+'eb':
+[{
+    'name':"Aditya Agarwal"
+    ,'position':"Co-Chair"
+},
+{
+    'name':"Vansh Narula"
+    ,'position':"Co-Chair"
+},{
+    'name':"Ansh Jain"
+    ,'position':"Rapporteur"
+}]
 },
 {
     'image':'aippm.png',
@@ -135,6 +179,17 @@ Members of this council must be aware that many of these issues are complex, and
 'agendas':[
 'Beef ban politics',
 'Discussing the implementation and effects of demonitization of 500 and 1000 INR']
+,
+'eb':[
+{
+    'name':"Parth Valluri",
+    'position': "Deputy Moderator"
+},
+{
+    'name':"Vaivab Das",
+    'position': "Moderator"
+},
+]
 }
 ]
 var applications = [

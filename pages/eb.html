@@ -1,21 +1,26 @@
+<md-content layout="row" layout-padding style="width: 100%" layout-align="center">
 
-    <h1 class="title" style="font-size:32px;text-transform:none;text-align:center;">United Nations Security Council - UNSC</h1>
-    <img src="images/somyabasu.jpg" style="border-radius: 90px 90px 90px 90px;width:70%;height:70%;float:center;margin-left:150px;"/><br/><br/><br/>
-    <!--img src="images/aishani.jpg" style="border-radius: 90px 90px 90px 90px;width:70%;height:70%;float:center;margin-left:150px;"/><br/><br/><br/-->	
-  
- 
-    <h1 class="title" style="font-size:32px;text-transform:none;text-align:center;">United Nations General Assembly - UNGA (DISEC)</h1>
-    <img src="images/vaivab.jpg" style="border-radius: 90px 90px 90px 90px;width:70%;height:70%;float:center;margin-left:150px;"/> <br/> <br/><br/>
-<img src="images/dineshn.jpg" style="border-radius: 100px 100px 100px 100px;width:70%;height:70%;float:center;margin-left:150px;"/>
+	<div flex=95 flex-gt-sm=80 layout='column' layout-align="center" style="display: block;">
+		<h1 class="title md-display-2">Executive Board</h1>
 
+		<div ng-repeat="c in committees" class="committee">
+			<md-toolbar style = "background: rgba(87, 60, 146, 0.87)">
+			<md-toolbar-tools>
+			</md-toolbar-tools>
+			<h3 layout-padding style="color:white !important; font-weight: bold;">{{c.title}}</h3>
+			</md-toolbar>
+			<div class="md-whiteframe-z1" layout-gt-sm=row layout=column layout-padding>
+			<md-card flex=95 flex-gt-sm=30 ng-repeat="p in c.eb" style="min-height: 20vh" md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch ng-repeat="c in contact">
+		        <md-card-title>
+		            <md-card-title-text>
+		                <span class="md-headline">{{p.name}}</span>
+		                <span class="md-subhead">{{p.position || "Unknown"}}</span>
+		            </md-card-title-text>
+		        </md-card-title>
+    		</md-card>
+			</div>
+			</div>
+		</div>
 
-
-  <h1 class="title" style="font-size:32px;text-transform:none;text-align:center;">United Nations General Assembly -
-UNGA (Legal) </h1>
-	<img src="images/souryan.jpg" style="border-radius: 100px 100px 100px 100px;width:70%;height:70%;float:center;margin-left:150px;"/>  <br/><br/><br/>
-<img src="images/ashwinr.jpg" style="border-radius: 100px 100px 100px 100px;width:70%;height:70%;float:center;margin-left:150px;"/> <br><br/><br/><br/>
-
-  <h1 class="title" style="font-size:32px;text-transform:none;text-align:center;">United Nations Human Rights Council -
-UNHRC </h1>
-	<img src="images/hussain.jpg" style="border-radius: 100px 100px 100px 100px;width:70%;height:70%;float:center;margin-left:150px;"/>  <br/><br/><br/>
-<img src="images/Tamanna.jpg" style="border-radius: 80px 50px 80px 50px;width:70%;height:70%;float:center;margin-left:150px;"/> <br/><br/><br/><br/>
+	</div>
+</div>
