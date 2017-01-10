@@ -127,7 +127,7 @@ Members of this council must be aware that many of these issues are complex, and
 var applications = [
 {
     name:"Delegate",
-    link:"https://iiithmun.typeform.com/to/cd67cV?typeform-embed=embed-widget"
+    link:"https://iiithmun.typeform.com/to/T4EDSF?typeform-embed=embed-widget"
 },
 {
     name:"International Press",
