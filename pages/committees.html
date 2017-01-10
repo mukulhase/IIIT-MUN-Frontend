@@ -13,8 +13,13 @@
 			<div flex=30 >
 				<img ng-src="images/{{c.image}}" style="width:100%">
 			</div>
-			<div flex=70 class="md-body-2">{{c.content}}</div>
-				
+			<div flex=70 class="md-body-2">{{c.content}}
+			<h4>Agendas:</h4>
+			<ul>
+					<li ng-repeat="agenda in c.agendas">
+						{{agenda}}
+					</li>
+				</ul></div>
 			</div>
 		</div>
 

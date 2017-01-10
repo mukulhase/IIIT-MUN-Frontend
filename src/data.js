@@ -64,7 +64,11 @@ var committees =
 Anna Lindh\
 The UN Security Council is one of the six principal organs of the UN, tasked with the maintenance of international peace and security, as well as accepting new members to the UN and approving any changes to the United Nations Charter. It’s powers include the establishment of peacekeeping operations, imposing international sanctions, and the authorization of military action through resolutions. It is the only committee that is capable of issuing binding resolutions to member states.\'\
 At IIIT-H MUN 2016, FSC delegates will be taken a few years into the future, to discuss and resolve issues that a potential Security Council of that time would deal with. This committee will allow each delegate to test both their deductive and imaginative skills, and to create solutions to problems that generations of the future will have to eventually face, and resolve. \
-'
+',
+    'agendas':[
+    'Fall of Europe: Analysing the situation at hand post the breakdown of the European Union'
+    ]
+
 },{
     'image':'disec.png',
     'title':'DISEC',
@@ -78,7 +82,9 @@ DISEC is perhaps one of the most important General Assembly committees, and it i
 \
 As DISEC members, delegates will debate and discuss about a wide variety of arms- and security-related issues, and pass resolutions that would help to make the world a safer and more peaceful place.\
 '
-
+, 'agendas':[
+'Militarization of anti-state forces',
+'The need for drones and lethal autonomous weapons']
 },
 {
     'image':'unhrc.png',
@@ -90,7 +96,10 @@ Kay Granger\
 The Human Rights Council is an inter-governmental body within the United Nations system responsible for strengthening the promotion and protection of human rights around the globe and for addressing situations of human rights violations and make recommendations on them. It has the ability to discuss all thematic human rights issues and situations that require its attention throughout the year. The Council is made up of 47 United Nations Member States which are elected by the UN General Assembly. \
  \
 The UN HRC deals with topics that revolve around Human Rights violations - such as discrimination against minority groups, abuse of human rights, and human rights during conflict. It abides by the many different human rights conventions, and works with special rapporteurs and working groups to investigate human rights violations, and to keep states in check. \
-'
+',
+'agendas':[
+'Discussing rights of prisoners of war'
+]
 },
 {
     'image':'unodc.png',
@@ -107,7 +116,9 @@ Due to the broad scope of its work, the UNODC operates through all the regions o
 \
 \
 As UNODC members, delegates will confront problems specific to drugs and crime prevention, looking at these topics both from the national and global point of view, and be challenged to devise policies and solutions that would be relevant and implementable in today’s world.\
-'
+',
+'agendas':[
+'Considering legalizing Marijuana globally']
 },
 {
     'image':'aippm.png',
@@ -120,7 +131,10 @@ AIPPM is a council consisting of political representatives of various parties, w
 \
 \
 Members of this council must be aware that many of these issues are complex, and should keep in mind that there are more than a billion people in India - of diverse religions, castes, creeds and try to represent views inclusively. \
-'
+',
+'agendas':[
+'Beef ban politics',
+'Discussing the implementation and effects of demonitization of 500 and 1000 INR']
 }
 ]
 var applications = [
