@@ -136,7 +136,12 @@ var applications = [
 {
     name:"Delegation",
     link:"https://iiithmun.typeform.com/to/WjHJLU?typeform-embed=embed-widget"
+},
+  {
+    name:"Payment",
+    link:"https://in.explara.com/e/iiit-h-mun-17"
 }
+  
 ]
 var schedule = [
 {
