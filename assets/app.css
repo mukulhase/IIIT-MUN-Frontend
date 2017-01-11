@@ -748,3 +748,6 @@ span.name {
 .clock {
   font-size: large;
 }
+#section1 > div{
+  vertical-align: top;
+}

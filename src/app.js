@@ -1,4 +1,5 @@
 var loaded=false;
+var readmore;
 angular
     .module('MUN', ['fullPage.js','ui.router','ngMaterial', 'MUN.controllers', 'MUN.routes','sasrio.angular-material-sidenav'])
     .config(function($$mdSvgRegistry,$mdThemingProvider, $mdIconProvider,ssSideNavSectionsProvider){
@@ -82,6 +83,20 @@ angular
             }, function() {
             });
         };
+        readmore = function(){
+            $mdDialog.show({
+              // controller: DialogController,
+              templateUrl: "pages/letter.html",
+              parent: angular.element(document.body),
+              clickOutsideToClose:true,
+              fullscreen: false // Only for -xs, -sm breakpoints.
+            })
+            .then(function(answer) {
+
+            }, function() {
+            });
+        }
+        $rootScope.readmore = readmore;
 
 
     }).config( function($mdThemingProvider){

@@ -1,5 +1,5 @@
 var letter = "<h1 class=\"md-display-1\" style=\"text-align:center\"><u> From the Secretary General </u></h1>\
-<div class=\"md-whiteframe-z1 md-body-2\" style= \"max-height: 40vh;background:white \" id=\"letter\" >\
+<div class=\"md-whiteframe-z1 md-body-2\" style= \"max-height: 39vh;background:white \" id=\"letter\" >\
 <p class='md-headline'>\
 Greetings,\
 </p>\
@@ -12,7 +12,7 @@ This year, we will be hosting the MUN in partnership with CID (Conclave of Inter
 </p>\
 <p>\
 We hope to have an enjoyable and exciting IIITH-MUN, and look forward to welcoming all of you in January 2017.\
-</p><a class='md-button readmore'>Read More</a>\
+</p><a class='md-button readmore' onclick='readmore()'>Read More</a>\
 </div>\
 <div>\
 With regards<br>\
@@ -264,11 +264,29 @@ contact = [
     'phone': '9618153254',
     'email': 'adibhar97@gmail.com'
 }];
-sponsors = [
-{
-    'image': "cid.jpg"
-},{
-    'image': "iiit-new.png"
-},{
-    'image': "oyo.png"
-}]
+sponsors = {
+    'Hosting Partners':[
+        {
+            'name':'Conclave of International Diplomats',
+            'image': "cid.jpg"
+        },{
+            'name':'IIIT Hyderabad',
+            'image': "iiit-new.png"
+        },
+    ],
+    'Print Partner':[
+    {
+        'name':'pricom',
+        'image': "pricom.jpg"
+    }],
+    'Hospitality Partner':[
+    {
+        'name':'Oyo',
+        'image': "oyo.png"
+    }],
+    'Radio Partner':[
+    {
+        'name':"Red FM",
+        'image': "red-fm.jpg"
+    }]
+};

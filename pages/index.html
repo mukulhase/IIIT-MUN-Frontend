@@ -19,7 +19,7 @@
     </div>
     <div class="section" id="section1">
         <div style="width: 100%" layout="row" layout-align="center">
-            <div ng-bind-html="renderHtml(letter)" class="box bounceInUp" style="max-height: 80vh;" layout-padding flex="100" flex-gt-sm="80">
+            <div ng-bind-html="renderHtml(letter)" class="box bounceInUp" style="max-height: 70vh;" layout-padding flex="100" flex-gt-sm="80">
             </div>
         </div>
     </div>
@@ -44,9 +44,9 @@
                     </md-card-title>
                     <md-card-content>
                     <md-card-actions layout="row" layout-align="center center">
-                    <md-button>
-                    <i class="fa fa-facebook fa-4" aria-hidden="true"></i>
-                    </md-button>
+                    <a class='md-button' href="mailto:{{secretariat[j].email}}">
+                    <i class="fa fa-envelope fa-4" aria-hidden="true"></i>
+                    </a>
                     <a class='md-button' href="tel:{{secretariat[j].pno}}">
                     <i class="fa fa-phone fa-4" aria-hidden="true"></i>
                     </a>
@@ -60,11 +60,16 @@
     <div class="section" id="section3">
         <h1 style="width: 100%; text-align: center" class="md-display-2">Partners</h1>
         <div flex layout-align="center" layout=row>
-            <div flex="80" flex-sm="100" layout=row layout-padding>
-                <div ng-repeat="sponsor in sponsors" flex style="background-image: url(images/{{sponsor.image}}); background-size: contain;background-repeat: no-repeat;background-position: center;">
-                    <div style="height: 400px">
+            <div flex="100" flex-gt-sm="80" layout=row layout-padding>
+                <div ng-repeat="(type, list) in sponsors" flex>
+                <h3>{{type}}</h3>
+                <div layout="column" layout-gt-sm="row">
+                    <div ng-repeat="sponsor in list" flex style="background-image: url(images/{{sponsor.image}}); background-size: contain;background-repeat: no-repeat;background-position: center;">
+                        <div style="height: 200px">
                         
+                        </div>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
