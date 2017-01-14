@@ -751,3 +751,58 @@ span.name {
 #section1 > div{
   vertical-align: top;
 }
+.eventslist td {
+            position: relative;
+            padding: .5em;
+            vertical-align: middle;
+        }
+  .eventslist .day {
+            font-size: 1.3em;
+            padding-right: 1em;
+        }
+  .eventslist .hidden-day {
+            visibility: hidden;
+        }
+  .eventslist .event-container {
+            border-left: .35em solid rgba(87, 60, 146, 0.87);
+            padding-left: 0.95em;
+        }
+
+  .eventslist .event {
+            color:white;
+            display: block;
+            position: relative;
+            width: 10em;
+            padding: .5em;
+        }
+
+  .eventslist .circle {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            left: -1.6em;
+            background-color: rgba(87, 60, 146, 1);
+            width: 1em;
+            height: 1em;
+            border-radius: .5em;
+        }
+
+  .eventslist .innercircle {
+            position: relative;
+            top: .25em;
+            left: .25em;
+            width: .5em;
+            height: .5em;
+            border-radius: .25em;
+        }
+  .eventslist .innercircle:hover {
+          background-color: rgba(87, 60, 146, 1);
+                display: block;
+            }
+.eventslist {
+        margin:auto;
+      }
+
+        
+        

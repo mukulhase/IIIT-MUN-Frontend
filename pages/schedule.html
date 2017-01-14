@@ -1,16 +1,26 @@
-<h1 class="title" style="font-size:32px;text-transform:none;text-align:center;">Schedule</h2>
+<md-content layout="row" layout-padding style="width: 100%" layout-align="center">
+
+    <div flex=95 flex-gt-sm=80 layout='column' layout-align="center" style="display: block;">
+        <h1 class="title md-display-2">Schedule</h1>
 <div style="width: 100%" layout="row" layout-align="center">
-    <div>
-        <md-card md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch ng-repeat="s in schedule">
-                <md-card-title>
-                    <md-card-title-text>
-                        <span class="md-headline" style="text-align:center;font-size:22px;">{{s.day}}</span>
-                        <span class="" style="text-align:center;" ng-repeat="e in s.events">
-                            {{e}}<br>
-                            <span ng-if="!$last">|</span>
-                        </span>
-                    </md-card-title-text>
-                </md-card-title>
-        </md-card>
+    <div class="md-whiteframe-z1" layout-padding flex=100 flex-gt-sm=80>
+    <table class="eventslist" ng-repeat = "s in schedule" style="padding:0 !important">
+        <tbody>
+                <tr class="timeline" ng-repeat="e in s.events">
+                        <td class="day" ng-if="$first">
+                            {{s.day}}
+                        </td>
+                        <td class="day repeat-day hidden" ng-if="!$first"></td>
+                    <td class="event-container" >
+                        <a href="" class="event md-whiteframe-z2" style="text-decoration: none" md-colors="{background: 'accent-500'}">
+                            <div class="circle"><div class="innercircle"></div></div>
+                            <span>{{e}}</span><br/>
+                        </a>
+                    </td>
+                </tr>
+        </tbody>
+    </table>
     </div>
 </div>
+</div>
+</md-content>
