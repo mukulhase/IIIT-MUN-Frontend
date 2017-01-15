@@ -1,4 +1,4 @@
-var letter = "<h1 class=\"md-display-1\" style=\"text-align:center\"><u> From the Secretary General </u></h1>\
+var letter = "<h1 class=\"md-display-1\" style=\"text-align:center\">From the Secretary General</h1>\
 <div class=\"md-whiteframe-z1 md-body-2\" style= \"max-height: 39vh;background:white \" id=\"letter\" >\
 <p class='md-headline'>\
 Greetings,\
