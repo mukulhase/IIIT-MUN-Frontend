@@ -1,4 +1,4 @@
-var letter = "<h1 class=\"md-display-1\" style=\"text-align:center\"><u> From the Secretary General </u></h1>\
+var letter = "<h1 class=\"md-display-1\" style=\"text-align:center\">From the Secretary General</h1>\
 <div class=\"md-whiteframe-z1 md-body-2\" style= \"max-height: 39vh;background:white \" id=\"letter\" >\
 <p class='md-headline'>\
 Greetings,\
@@ -44,7 +44,7 @@ var menus = [{t:"About",l:[
 var secretariat = 
 [
 {'position':'Secretary General','image':'sid.png','name': 'Siddhant Shrivastava', 'pno': '+917799380007', 'email': 'siddhant.shrivastava23@gmail.com'},
-{'position':'Director General','name': 'Aayush Naik','image':'aayush.png', 'pno': '+96567056579', 'email': 'aayushnaik17@gmail.com'},
+{'position':'Director General','name': 'Aayush Naik','image':'aayush.png', 'pno': '+917799271029', 'email': 'aayushnaik17@gmail.com'},
 {'position':'USG Admin','name': 'Aditya Bharti', 'pno': '+919618153254','image':'adi.png', 'email': 'adibhar97@gmail.com'},
 {'name':'Sriram Indurthi','position':'Founder General','image':'Sriram.jpg'},
 {'position':'USG Design','name': 'Pranav Nair', 'pno': '+919642071222','image':'pranav.jpg', 'email': 'pranavnair97@gmail.com'},
@@ -223,7 +223,7 @@ var schedule = [
         "Tea/Snacks break",
         "1st Committee session continues",
         "Dinner",
-        "Social night (Felicity night), if any",
+        "Social night (Felicity night)",
         "Buses depart to delegate accommodation "
     ]
 },

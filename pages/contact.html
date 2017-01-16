@@ -1,9 +1,10 @@
 <md-content layout-padding layout-wrap  layout-align="center">
 <p class="md-headline" style="text-align: center;font-size: 40px;"> Contact Us </p><!--Don't think this is required - Pranav -->
 <p class="md-body-2" style="text-align: center;font-size: 20px">
-    Thank you for your interest in IIITH-MUN’16. We are happy to help you with any questions relating to our conference. We look forward to hearing from you!
+    Thank you for your interest in IIITH-MUN’17. We are happy to help you with any questions relating to our conference. We look forward to hearing from you!
 </p>
 <br>
+<div layout="row" flex=100 layout-align="center">
 <div layout="row" layout-align="center" flex=100 flex-gt-sm = 50>
     <md-card style="min-height: 25vh" flex md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch ng-repeat="c in contact">
         <md-card-title>
@@ -18,10 +19,13 @@
         </md-card-actions>
     </md-card>
 </div>
+</div>
+
+</md-content>
 <div id="respond">
 
     <form action="https://formspree.io/mun.iiithyd@gmail.com" method="post">
-    <md-content md-theme="docs-dark" layout-align="center center" layout-padding>
+    <md-content md-theme="docs-dark" layout-align="center center">
         <br>
         <span class="md-headline" style="display: table;">Queries</span>
         <div layout-gt-sm="row" layout="column">
@@ -52,4 +56,3 @@
     </md-content>
     </form>
 </div>
-</md-content>
