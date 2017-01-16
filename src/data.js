@@ -223,7 +223,7 @@ var schedule = [
         "Tea/Snacks break",
         "1st Committee session continues",
         "Dinner",
-        "Social night (Felicity night), if any",
+        "Social night (Felicity night)",
         "Buses depart to delegate accommodation "
     ]
 },
