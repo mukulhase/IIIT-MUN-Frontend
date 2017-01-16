@@ -44,7 +44,10 @@
                     </md-card-title>
                     <md-card-content>
                     <md-card-actions layout="row" layout-align="center center">
-                    <a class='md-button' href="mailto:{{secretariat[j].email}}">
+                    <a class='md-button' ng-if="secretariat[j].fb"  href="{{secretariat[j].fb}}">
+                    <i class="fa fa-facebook fa-4" aria-hidden="true"></i>
+                    </a>
+                    <a class='md-button' ng-if="!secretariat[j].fb"  href="mailto:{{secretariat[j].email}}">
                     <i class="fa fa-envelope fa-4" aria-hidden="true"></i>
                     </a>
                     <a class='md-button' href="tel:{{secretariat[j].pno}}">
