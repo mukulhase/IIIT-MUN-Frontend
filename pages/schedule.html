@@ -11,10 +11,14 @@
                             {{s.day}}
                         </td>
                         <td class="day repeat-day hidden" ng-if="!$first"></td>
+                        <td>
+                            {{e.time}}
+                        </td>
+                        
                     <td class="event-container" >
                         <a href="" class="event md-whiteframe-z2" style="text-decoration: none" md-colors="{background: 'accent-500'}">
                             <div class="circle"><div class="innercircle"></div></div>
-                            <span>{{e}}</span><br/>
+                            <span>{{e.event}}</span><br/>
                         </a>
                     </td>
                 </tr>

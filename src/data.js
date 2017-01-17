@@ -210,44 +210,69 @@ var applications = [
     link:"https://in.explara.com/e/iiit-h-mun-17"
 }
   
-]
+];
+
 var schedule = [
 {
-   'day':"27th January",
-   'events':[
-        "Registration",
-        "Opening ceremony",
-        "Orientation",
-        "Lunch",
-        "1st committee session",
-        "Tea/Snacks break",
-        "1st Committee session continues",
-        "Dinner",
-        "Social night (Felicity night), if any",
-        "Buses depart to delegate accommodation "
+    'day': "27th January",
+    'events':[
+        {
+            'time':'09:00 am - 09:30am',
+            'event' : "Registration"
+        },{
+            'time':'10:00 am - 10:40 am',
+            'event':  'Opening Ceremony'
+        },{
+            'time':'10:45 am - 12:45 pm',
+            'event':'Committee Session 1'
+        },{
+            'time':'12:45 pm- 01:30 pm',
+            'event':'Lunch'
+        },{
+            'time':'1:30 pm- 05:10 pm',
+            'event':'Committee Session 2'
+        },{
+            'time':'08:30pm - 09:30pm',
+            'event':'Social night'
+        }
     ]
 },
 {
-    'day':"28th January",
+    'day': "28th January",
     'events':[
-        "Breakfast3",
-        "2nd Committee session",
-        "Lunch",
-        "3rd committee session",
-        "Tea/Snacks break",
-        "Break",
-        "Dinner",
-        "Social night",
+        {
+            'time':'08:30 am- 9:00 am',
+            'event' :"Breakfast"
+        },{
+            'time':'9:00 am- 12:45 pm',
+            'event': 'Committee Session 3'
+        },{
+            'time':'12:45 pm- 01:30 pm-',
+            'event':'Lunch'
+        },{
+            'time':'01:30 pm- 05:10 pm',
+            'event':'Committee Session 4'
+        }
     ]
-},
-{
-    'day':'29th January',
+},{
+    'day': "29th January",
     'events':[
-        "Breakfast",
-        "4th committee session",
-        "Lunch",
-        "5th committee session",
-        "Closing ceremony"
+        {
+            'time':'8:30 am - 9:00 am',
+            'event' : "Breakfast"
+        },{
+            'time':'9:00 am- 12:00 pm',
+            'event': 'Committee Session 5'
+        },{
+            'time':'12:00 pm - 01:00 pm',
+            'event':'Lunch'
+        },{
+            'time':'01:00 pm- 03:30 pm',
+            'event':'Committee Session 6'
+        },{
+            'time':'03:30 pm- 04:30 pm',
+            'event':'Closing Ceremony'
+        }
     ]
 }
 ];
