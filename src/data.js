@@ -71,11 +71,16 @@ At IIIT-H MUN 2016, FSC delegates will be taken a few years into the future, to 
     'Fall of Europe: Analysing the situation at hand post the breakdown of the European Union'
     ],
     'eb':[
-    {'name': 'Sourya Banerjee',
-    'position':"President"},{
+    {
+        'image':'images/EB/sourya_banerjee.jpg',
+        'name': 'Sourya Banerjee',
+        'position':"President"
+    },{
+        'image':'images/EB/yash_raj_singh.jpg',
         'name':'Yash Raj Singh',
         'position': 'Vice President'
     },{
+        'image':'images/EB/pragathi_jha.jpg',
         'name':'Pragathi Jha',
         'position':'Rapporteur'
     }
@@ -99,11 +104,13 @@ As DISEC members, delegates will debate and discuss about a wide variety of arms
 'The need for drones and lethal autonomous weapons'],
 'eb':[
     {
+        'image':'images/EB/adarsh_peri.jpg',
         'name': 'Adarsh Peri',
         'position':"Rapporteur"
     },
     {
-        'name':'Syed Asim',
+        'image':'images/EB/syed_asim_hussaini.jpg',
+        'name':'Syed Asim Hussaini',
         'position': 'Chair Person'
     }
     ]
@@ -124,13 +131,16 @@ The UN HRC deals with topics that revolve around Human Rights violations - such 
 ],
 'eb':[
 {
+    'image':'images/EB/soumith_kasetty.jpg',
     'name':"Soumith Kasetty"
     ,'position':"Chair"
 },{
+    'image':'images/EB/ankit_kapoor.jpg',
     'name':"Ankit Kapoor"
     ,'position':"Vice Chair Person"
 },
 {
+    'image':'images/EB/suravi_patnaik.jpg',
     'name':"Suravi Patnaik"
     ,'position':"Rapporteur"
 }]
@@ -155,13 +165,16 @@ As UNODC members, delegates will confront problems specific to drugs and crime p
 'Considering legalizing Marijuana globally'],
 'eb':
 [{
+    'image':'images/EB/aditya_agarwal.jpg',
     'name':"Aditya Agarwal"
     ,'position':"Co-Chair"
 },
 {
+    'image':'images/EB/vansh_narula.jpg',
     'name':"Vansh Narula"
     ,'position':"Co-Chair"
 },{
+    'image':'images/EB/ansh_jain.jpg',
     'name':"Ansh Jain"
     ,'position':"Rapporteur"
 }]
@@ -184,10 +197,12 @@ Members of this council must be aware that many of these issues are complex, and
 ,
 'eb':[
 {
+    'image':'images/EB/parth_valluri.jpg',
     'name':"Parth Valluri",
     'position': "Deputy Moderator"
 },
 {
+    'image':'images/EB/vaivab_das.jpg',
     'name':"Vaivab Das",
     'position': "Moderator"
 },
