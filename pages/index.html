@@ -63,12 +63,12 @@
     <div class="section" id="section3">
         <h1 style="width: 100%; text-align: center" class="md-display-2">Partners</h1>
         <div flex layout-align="center" layout=row>
-            <div flex="100" flex-gt-sm="80" layout=row layout-padding>
-                <div ng-repeat="(type, list) in sponsors" flex>
+            <div flex="100" flex-gt-sm="80" layout=row layout-padding layout-wrap>
+                <div ng-repeat="(type, list) in sponsors" flex="21" flex-gt-sm >
                 <h3>{{type}}</h3>
-                <div layout="column" layout-gt-sm="row">
+                <div layout="row">
                     <div ng-repeat="sponsor in list" flex style="background-image: url(images/{{sponsor.image}}); background-size: contain;background-repeat: no-repeat;background-position: center;">
-                        <div style="height: 200px">
+                        <div style="height: 15vh">
                         
                         </div>
                     </div>

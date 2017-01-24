@@ -112,6 +112,11 @@ As DISEC members, delegates will debate and discuss about a wide variety of arms
         'image':'images/EB/syed_asim_hussaini.jpg',
         'name':'Syed Asim Hussaini',
         'position': 'Chair Person'
+    },
+    {
+        'image':'',
+        'name':'Sahiti Chedalavada',
+        'position': 'Vice Chair Person'
     }
     ]
 },
@@ -330,5 +335,15 @@ sponsors = {
     {
         'name':"Red FM",
         'image': "red-fm.jpg"
-    }]
+    }],
+    'Travel Partner':[
+    {
+        'name':'Uber',
+        'image': "uber.png"
+    }],
+    'Partner Associate':[
+    {
+        'name':'Indian Oil',
+        'image': "indianoil.jpg"
+    }],
 };
