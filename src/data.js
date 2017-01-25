@@ -341,7 +341,7 @@ sponsors = {
         'name':'Uber',
         'image': "uber.png"
     }],
-    'Partner Associate':[
+    'Associate Sponsor':[
     {
         'name':'Indian Oil',
         'image': "indianoil.jpg"
