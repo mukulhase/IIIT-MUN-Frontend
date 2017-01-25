@@ -49,12 +49,11 @@ var secretariat =
 {'name':'Sriram Indurthi','position':'Founder General','image':'Sriram.jpg'},
 {'position':'USG Delegate Affairs','image':'sayantani.jpg','name': 'Sayantani Saraswati', 'pno': '', 'email': '','fb':''},
 {'position':'USG Design','image':'suparna.jpg','name': 'Suparna Vontair', 'pno': '', 'email': '','fb':''},
-{'position':'USG Design','name': 'Pranav Nair', 'pno': '+919642071222','image':'pranav.jpg', 'email': 'pranavnair97@gmail.com'},
+{'position':'USG Design and Marketing','name': 'Pranav Nair', 'pno': '+919642071222','image':'pranav.jpg', 'email': 'pranavnair97@gmail.com'},
 {'position':'USG Policy','name': 'Nitin John Raj', 'pno': '+919148157997','image':'nitin.jpg', 'email': 'nitinjohnraj@gmail.com'},
-{'position':'USG Content Writing','name': 'Aurobindo Mungala', 'pno': '+919566067176','image':'auro.jpg', 'email': 'koolschoolfan@gmail.com'},
 {'position':'USG Technology','name': 'Mukul Hase', 'pno': '9652743554','image':'mukul.jpg', 'email': 'mukulhase@gmail.com'},
 {'position':'USG Hospitality','name': 'Riya Pal', 'pno': '+918886222863','image':'riya.jpg', 'email': 'riya.pal@gmail.com'},
-{'position':'USG Marketing','name': 'Saumya Prabodh', 'pno': '919618207958','image':'saumya.jpg', 'email': 'srivastava.saumya2811@gmail.com'},
+{'position':'USG Logistics','name': 'Saumya Prabodh', 'pno': '919618207958','image':'saumya.jpg', 'email': 'srivastava.saumya2811@gmail.com'},
 ];
 
 var committees = 
