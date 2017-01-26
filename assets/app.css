@@ -751,6 +751,11 @@ span.name {
 #section1 > div{
   vertical-align: top;
 }
+@media (max-width: 800px){
+  #section3 > div {
+      vertical-align: top;
+  }
+}  
 .eventslist td {
             position: relative;
             padding: .5em;
