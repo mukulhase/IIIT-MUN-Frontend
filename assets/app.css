@@ -808,6 +808,7 @@ span.name {
 .eventslist {
         margin:auto;
       }
-
-        
+iframe {
+  border: none;
+}
         
