@@ -241,20 +241,41 @@ var schedule = [
             'time':'09:00 am - 09:30am',
             'event' : "Registration"
         },{
-            'time':'10:00 am - 10:40 am',
-            'event':  'Opening Ceremony'
+            'time':'10:00 am - 10:15 am',
+            'event':  'On Spot Registration'
         },{
-            'time':'10:45 am - 12:45 pm',
-            'event':'Committee Session 1'
+            'time':'10:15 am - 11:30 am',
+            'event':'Room Check-in'
         },{
-            'time':'12:45 pm- 01:30 pm',
+            'time':'11:45 am - 12:30 pm',
+            'event':'Uber transport to IIIT-H'
+        },{
+            'time':'12:00 pm - 01:00 pm',
+            'event':'Distribution of Delegate Kits'
+        },{
+            'time':'01:05 pm - 01:45 pm',
+            'event':'Opening Ceremony'
+        },{
+            'time':'01:45 pm - 02:15 pm',
             'event':'Lunch'
         },{
-            'time':'1:30 pm- 05:10 pm',
+            'time':'02:30 pm - 04:30 pm',
+            'event':'Committee Session 1'
+        },{
+            'time':'04:30 pm - 04:45 pm',
+            'event':'Break'
+        },{
+            'time':'04:45 pm - 06:30 pm',
             'event':'Committee Session 2'
         },{
-            'time':'08:30pm - 09:30pm',
+            'time':'06:30 pm - 07:30 pm',
+            'event':'Dinner'
+        },{
+            'time':'07:30 pm - 10:00pm',
             'event':'Social night'
+        },{
+            'time':'10:00 pm - 10:30pm',
+            'event':'Transport to Hotel rooms'
         }
     ]
 },
@@ -262,37 +283,58 @@ var schedule = [
     'day': "28th January",
     'events':[
         {
-            'time':'08:30 am- 9:00 am',
+            'time':'07:30 am - 8:30 am',
             'event' :"Breakfast"
         },{
-            'time':'9:00 am- 12:45 pm',
+            'time':'09:00 am - 09:45 pm',
+            'event':'Uber transport to IIIT-H'
+        },{
+            'time':'10:00 am - 12:45 pm',
             'event': 'Committee Session 3'
         },{
-            'time':'12:45 pm- 01:30 pm-',
+            'time':'12:45 pm - 01:45 pm',
             'event':'Lunch'
         },{
-            'time':'01:30 pm- 05:10 pm',
+            'time':'01:45 pm - 04:00 pm',
             'event':'Committee Session 4'
+        },{
+            'time':'04:00 pm - 04:15 pm',
+            'event':'Break'
+        },{
+            'time':'04:15 am - 06:30 pm',
+            'event': 'Committee Session 5'
+        },{
+            'time':'06:30 pm - 07:30 pm',
+            'event':'Dinner'
+        },{
+            'time':'07:30 pm - 10:00pm',
+            'event':'Social night(EDM NIGHT)'
+        },{
+            'time':'10:00 pm - 10:30pm',
+            'event':'Transport to Hotel rooms'
         }
     ]
 },{
     'day': "29th January",
     'events':[
         {
-            'time':'8:30 am - 9:00 am',
-            'event' : "Breakfast"
+            'time':'07:30 am - 8:30 am',
+            'event' :"Breakfast"
         },{
-            'time':'9:00 am- 12:00 pm',
-            'event': 'Committee Session 5'
+            'time':'09:00 am - 09:45 pm',
+            'event':'Uber transport to IIIT-H'
         },{
-            'time':'12:00 pm - 01:00 pm',
+            'time':'10:00 am - 12:45 pm',
+            'event': 'Committee Session 6'
+        },{
+            'time':'12:45 pm - 01:45 pm',
             'event':'Lunch'
         },{
-            'time':'01:00 pm- 03:30 pm',
-            'event':'Committee Session 6'
+            'time':'01:45 pm - 04:00 pm',
+            'event':'Committee Session 7'
         },{
-            'time':'03:30 pm- 04:30 pm',
-            'event':'Closing Ceremony'
+            'time':'04:30 pm - 05:30 pm',
+            'event': 'Closing Ceremony'
         }
     ]
 }
