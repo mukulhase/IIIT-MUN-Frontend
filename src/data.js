@@ -29,7 +29,7 @@ IIITH-MUN, 2017\
 
 var links = [
     {t:"Home",l:"index"},
-    {t:"Schedule",l:"schedule"},
+    {t:"Schedule/Resources",l:"schedule"},
     {t:"Executive Board",l:"eb"},
     {t:"Committees",l:"committees"},
     {t:"Allotment",l:"allotment"},
