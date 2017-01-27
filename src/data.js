@@ -125,11 +125,12 @@ The UN HRC deals with topics that revolve around Human Rights violations - such 
 'Discussing rights of prisoners of war'
 ],
 'eb':[
-{
-    'image':'images/EB/soumith_kasetty.jpg',
-    'name':"Soumith Kasetty"
-    ,'position':"Chair"
-},{
+//{
+//    'image':'images/EB/soumith_kasetty.jpg',
+//    'name':"Soumith Kasetty"
+//    ,'position':"Chair"
+//},
+  {
     'image':'images/EB/ankit_kapoor.jpg',
     'name':"Ankit Kapoor"
     ,'position':"Vice Chair Person"
